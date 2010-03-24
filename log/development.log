@@ -39,3 +39,46 @@ Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/pages/home]
 Processing PagesController#contact (for 127.0.0.1 at 2010-03-24 16:03:40) [GET]
 Rendering pages/contact
 Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/pages/contact]
+
+
+Processing PagesController#new (for 127.0.0.1 at 2010-03-24 16:55:00) [GET]
+
+ActionController::UnknownAction (No action responded to new. Actions: ):
+  <internal:prelude>:8:in `synchronize'
+  /Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-03-24 16:55:06) [GET]
+
+ActionController::UnknownAction (No action responded to home. Actions: ):
+  <internal:prelude>:8:in `synchronize'
+  /Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-03-24 16:55:12) [GET]
+Rendering pages/about
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/pages/about]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-03-24 16:56:37) [GET]
+Rendering pages/about
+Completed in 14ms (View: 13, DB: 0) | 200 OK [http://localhost/pages/about]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-03-24 16:56:44) [GET]
+
+ActionView::MissingTemplate (Missing template pages/home.erb in view path app/views):
+  <internal:prelude>:8:in `synchronize'
+  /Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
