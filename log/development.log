@@ -18,3 +18,24 @@
  FROM sqlite_master
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-24 16:03:25) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: contact and home):
+  <internal:prelude>:8:in `synchronize'
+  /Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-03-24 16:03:33) [GET]
+Rendering pages/home
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-03-24 16:03:40) [GET]
+Rendering pages/contact
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/pages/contact]
