@@ -2410,3 +2410,976 @@ Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/]
   [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
   [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Example User', 'user@example.com', '2010-03-29 20:09:59', '2010-03-29 20:09:59', '7a9e1fd47573ebda4f737018539f60bd59297c4347799369229a1966dffadfc0', '3a0c6a52c7b6ac987ebe2a62e9ad4b41e8606dd4dd64535b8711e785f248a45b')[0m
   [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-29 21:08:16', '2010-03-29 21:08:16', 'ae5004299a9621434da53c3fc78463fd88d954cc8832afc4b2a6be6aec58f437', 'e569bd4423ec0bd9121702f6affbe8ee749fd64b88d396b79f3052c33bbc98a2')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-29 16:08:16) [GET]
+  Parameters: {"id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-03-29 21:08:16", updated_at: "2010-03-29 21:08:16", encrypted_password: "ae5004299a9621434da53c3fc78463fd88d954cc8832afc4b2a...", salt: "e569bd4423ec0bd9121702f6affbe8ee749fd64b88d396b79f3...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (1.2ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 55ms (View: 54, DB: 1) | 200 OK [http://test.host/users/1]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-03-29 16:08:16) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-03-29 16:08:16) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-29 21:09:00', '2010-03-29 21:09:00', 'f55a0f223c5eaf127bc0947b89737bb39990aba222be22e2f2400b1e02767a4f', 'abd5f8c4924d28745068a0f8630505834cdd880f54cef56b824a89a682f397d9')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-29 16:09:00) [GET]
+  Parameters: {"id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-03-29 21:09:00", updated_at: "2010-03-29 21:09:00", encrypted_password: "f55a0f223c5eaf127bc0947b89737bb39990aba222be22e2f24...", salt: "abd5f8c4924d28745068a0f8630505834cdd880f54cef56b824...">}
+Rendering template within layouts/application
+Rendering users/show
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-03-29 16:09:00) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.1ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 20ms (View: 19, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-03-29 16:09:00) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-29 21:11:22', '2010-03-29 21:11:22', 'd9b799f60be3a3870208665c7ab268fdbffeed4dac5caed737f0839524edee9f', 'a7cd4a2cf9dde6cad825602d04b6554633853c8e914a8a33121e71e84af0eeed')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-29 16:11:22) [GET]
+  Parameters: {"id"=>"19"}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (1.2ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 37ms (View: 35, DB: 1) | 200 OK [http://test.host/users/19]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-03-29 16:11:22) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-03-29 16:11:22) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.5ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-29 21:13:29', '2010-03-29 21:13:29', '3b9a049eb2110002e1c432ca4128d39e071ab937d3d17ef1340f08ff3ba960d8', 'bf78a58e42a8378c4f4053ca740923e961d32398ad3d76f205f8a0fb70d276f5')[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-03-29 16:13:29) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.2ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 37ms (View: 35, DB: 1) | 200 OK [http://test.host/users/new]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-03-29 16:13:29) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-29 21:14:37', '2010-03-29 21:14:37', '33a370de307d147ca3a0ab62135cb818cbecc52ac6ad3276883192a458301027', 'f41541ab76b781111353a61fba999fd82fb3a0faef73739e5bca29cddb59b212')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-29 16:14:37) [GET]
+  Parameters: {"id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-03-29 21:14:37", updated_at: "2010-03-29 21:14:37", encrypted_password: "33a370de307d147ca3a0ab62135cb818cbecc52ac6ad3276883...", salt: "f41541ab76b781111353a61fba999fd82fb3a0faef73739e5bc...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (1.2ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 37ms (View: 35, DB: 1) | 200 OK [http://test.host/users/1]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-03-29 16:14:37) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-03-29 16:14:37) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.5ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-29 21:15:21', '2010-03-29 21:15:21', 'dd508fa426b930dcdf5bc4e58e35cbae01a4528e36764d545fe02c16eaf008e8', '046391de577b5906a212171af1a1c47fc28c230fe4acb6c66953a74be8f4e3fe')[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-03-29 16:15:21) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.2ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 37ms (View: 35, DB: 1) | 200 OK [http://test.host/users/new]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-03-29 16:15:21) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-29 21:15:55', '2010-03-29 21:15:55', '8e86a706390c56291f33bc813a6ae90684ef3f30a7126ef786537bf7fe2bd581', '434080320c7b04d9c912cecb29937aa82af81e089b2ff9a3c42f6014e946d85f')[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-03-29 16:15:55) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.2ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 37ms (View: 35, DB: 1) | 200 OK [http://test.host/users/new]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-03-29 16:15:55) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.7ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-29 21:16:43', '2010-03-29 21:16:43', '1e2fc41e86eb9f269b96c14f8ca445e9e989eb7cbfa6ba4165b8027317d3c8be', '656c815fe4a753c8492f1e2b26919f336a2d29fe5a06b679383bea1cbbc9e236')[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-03-29 16:16:43) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.2ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 37ms (View: 35, DB: 1) | 200 OK [http://test.host/users/new]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-03-29 16:16:43) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.7ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-29 21:17:16', '2010-03-29 21:17:16', '0d5e037ce7108d25665c1562b64eaa28b70840c008860e1e593cf53f8d8d97c5', '97dda9fa84c08b39fe6f061e97fc550e9321a7ddd7ab704d13d00a67337e6c22')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-29 16:17:16) [GET]
+  Parameters: {"id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-03-29 21:17:16", updated_at: "2010-03-29 21:17:16", encrypted_password: "0d5e037ce7108d25665c1562b64eaa28b70840c008860e1e593...", salt: "97dda9fa84c08b39fe6f061e97fc550e9321a7ddd7ab704d13d...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (1.2ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 36ms (View: 35, DB: 1) | 200 OK [http://test.host/users/1]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-03-29 16:17:17) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-03-29 16:17:17) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-29 21:18:26', '2010-03-29 21:18:26', '24ce5c7c7ad591b1cf1f2457a06bc817d092bc310c1448904d62194cfa6b9ea0', '7ee7a1dd984ca9ab40741f259280ab54ff15c9ab02ad2983b8679f45a3d836aa')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-29 16:18:26) [GET]
+  Parameters: {"id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-03-29 21:18:26", updated_at: "2010-03-29 21:18:26", encrypted_password: "24ce5c7c7ad591b1cf1f2457a06bc817d092bc310c1448904d6...", salt: "7ee7a1dd984ca9ab40741f259280ab54ff15c9ab02ad2983b86...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (1.1ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 37ms (View: 35, DB: 1) | 200 OK [http://test.host/users/1]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-03-29 16:18:26) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-03-29 16:18:26) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-29 21:18:51', '2010-03-29 21:18:51', 'a15ce61e6614260ebcef2b81b49e00bbe164355e209a7423fa0b9650e0bdd16e', '8ef9f0fc057e40029814648db0ee792a569d34c2cea23a737c0bca28d6983608')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-29 16:18:51) [GET]
+  Parameters: {"id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-03-29 21:18:51", updated_at: "2010-03-29 21:18:51", encrypted_password: "a15ce61e6614260ebcef2b81b49e00bbe164355e209a7423fa0...", salt: "8ef9f0fc057e40029814648db0ee792a569d34c2cea23a737c0...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (1.2ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 37ms (View: 35, DB: 1) | 200 OK [http://test.host/users/1]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-03-29 16:18:51) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-03-29 16:18:51) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.5ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Example User', 'user@example.com', '2010-03-29 21:51:42', '2010-03-29 21:51:42', 'ec24a39d3851c5af32066f30b67e93f8f399a18c2f1a66103e9dec6b5992c2eb', 'bfca210e3da701770a397822fcb12ad1bdd13e5850121620249d1ff7edfe54f6')[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Example User', 'user@example.com', '2010-03-29 21:51:42', '2010-03-29 21:51:42', 'ec24a39d3851c5af32066f30b67e93f8f399a18c2f1a66103e9dec6b5992c2eb', 'bfca210e3da701770a397822fcb12ad1bdd13e5850121620249d1ff7edfe54f6')[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'bar@foo.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Example User', 'user@example.com', '2010-03-29 21:51:42', '2010-03-29 21:51:42', 'ec24a39d3851c5af32066f30b67e93f8f399a18c2f1a66103e9dec6b5992c2eb', 'bfca210e3da701770a397822fcb12ad1bdd13e5850121620249d1ff7edfe54f6')[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Example User', 'user@example.com', '2010-03-29 21:51:42', '2010-03-29 21:51:42', 'ec24a39d3851c5af32066f30b67e93f8f399a18c2f1a66103e9dec6b5992c2eb', 'bfca210e3da701770a397822fcb12ad1bdd13e5850121620249d1ff7edfe54f6')[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Example User', 'user@example.com', '2010-03-29 21:51:42', '2010-03-29 21:51:42', 'ec24a39d3851c5af32066f30b67e93f8f399a18c2f1a66103e9dec6b5992c2eb', 'bfca210e3da701770a397822fcb12ad1bdd13e5850121620249d1ff7edfe54f6')[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Example User', 'user@example.com', '2010-03-29 21:51:42', '2010-03-29 21:51:42', 'ec24a39d3851c5af32066f30b67e93f8f399a18c2f1a66103e9dec6b5992c2eb', 'bfca210e3da701770a397822fcb12ad1bdd13e5850121620249d1ff7edfe54f6')[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Example User', 'user@example.com', '2010-03-29 21:51:42', '2010-03-29 21:51:42', 'ec24a39d3851c5af32066f30b67e93f8f399a18c2f1a66103e9dec6b5992c2eb', 'bfca210e3da701770a397822fcb12ad1bdd13e5850121620249d1ff7edfe54f6')[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Example User', 'user@example.com', '2010-03-29 21:51:42', '2010-03-29 21:51:42', 'ec24a39d3851c5af32066f30b67e93f8f399a18c2f1a66103e9dec6b5992c2eb', 'bfca210e3da701770a397822fcb12ad1bdd13e5850121620249d1ff7edfe54f6')[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@foo.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'the_user@foo.bar.org') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'first.last@foo.jp') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@foo,com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user_at_foo.org') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'first.last@foo.') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Example User', 'user@example.com', '2010-03-29 21:51:42', '2010-03-29 21:51:42', 'ec24a39d3851c5af32066f30b67e93f8f399a18c2f1a66103e9dec6b5992c2eb', 'bfca210e3da701770a397822fcb12ad1bdd13e5850121620249d1ff7edfe54f6')[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-03-29 16:51:42) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.1ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 73ms (View: 71, DB: 7) | 200 OK [http://www.example.com/]
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-03-29 16:51:42) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/contact]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-03-29 16:51:42) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/about]
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-03-29 16:51:42) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/help]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-03-29 16:51:42) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-03-29 16:51:42) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-03-29 16:51:42) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/about]
+REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-03-29 16:51:42) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/help]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-29 21:51:42', '2010-03-29 21:51:42', 'ec24a39d3851c5af32066f30b67e93f8f399a18c2f1a66103e9dec6b5992c2eb', 'bfca210e3da701770a397822fcb12ad1bdd13e5850121620249d1ff7edfe54f6')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-29 16:51:42) [GET]
+  Parameters: {"id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-03-29 21:51:42", updated_at: "2010-03-29 21:51:42", encrypted_password: "ec24a39d3851c5af32066f30b67e93f8f399a18c2f1a66103e9...", salt: "bfca210e3da701770a397822fcb12ad1bdd13e5850121620249...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 1) | 200 OK [http://test.host/users/1]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-29 21:51:42', '2010-03-29 21:51:42', 'ec24a39d3851c5af32066f30b67e93f8f399a18c2f1a66103e9dec6b5992c2eb', 'bfca210e3da701770a397822fcb12ad1bdd13e5850121620249d1ff7edfe54f6')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-29 16:51:42) [GET]
+  Parameters: {"id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-03-29 21:51:42", updated_at: "2010-03-29 21:51:42", encrypted_password: "ec24a39d3851c5af32066f30b67e93f8f399a18c2f1a66103e9...", salt: "bfca210e3da701770a397822fcb12ad1bdd13e5850121620249...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 1) | 200 OK [http://test.host/users/1]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-29 21:51:42', '2010-03-29 21:51:42', 'ec24a39d3851c5af32066f30b67e93f8f399a18c2f1a66103e9dec6b5992c2eb', 'bfca210e3da701770a397822fcb12ad1bdd13e5850121620249d1ff7edfe54f6')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-29 16:51:42) [GET]
+  Parameters: {"id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-03-29 21:51:42", updated_at: "2010-03-29 21:51:42", encrypted_password: "ec24a39d3851c5af32066f30b67e93f8f399a18c2f1a66103e9...", salt: "bfca210e3da701770a397822fcb12ad1bdd13e5850121620249...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://test.host/users/1]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-29 21:51:42', '2010-03-29 21:51:42', 'ec24a39d3851c5af32066f30b67e93f8f399a18c2f1a66103e9dec6b5992c2eb', 'bfca210e3da701770a397822fcb12ad1bdd13e5850121620249d1ff7edfe54f6')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-29 16:51:42) [GET]
+  Parameters: {"id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-03-29 21:51:42", updated_at: "2010-03-29 21:51:42", encrypted_password: "ec24a39d3851c5af32066f30b67e93f8f399a18c2f1a66103e9...", salt: "bfca210e3da701770a397822fcb12ad1bdd13e5850121620249...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 1) | 200 OK [http://test.host/users/1]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-03-29 16:51:42) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-03-29 16:51:42) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-03-29 16:51:43) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/about]
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-03-29 16:51:43) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/about]
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-03-29 16:51:43) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/contact]
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-03-29 16:51:43) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/contact]
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-03-29 16:51:43) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/]
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-03-29 16:51:43) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Example User', 'user@example.com', '2010-03-29 22:03:16', '2010-03-29 22:03:16', 'd872744c015424194ab8e8ddd9b983406bb1dbecdd1e6c8bfdf4e3e77604112c', 'bc6d5248e44540550d8243ff33d09a86b22038124867066e650336d72e6cf840')[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Example User', 'user@example.com', '2010-03-29 22:03:16', '2010-03-29 22:03:16', 'd872744c015424194ab8e8ddd9b983406bb1dbecdd1e6c8bfdf4e3e77604112c', 'bc6d5248e44540550d8243ff33d09a86b22038124867066e650336d72e6cf840')[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'bar@foo.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Example User', 'user@example.com', '2010-03-29 22:03:16', '2010-03-29 22:03:16', 'd872744c015424194ab8e8ddd9b983406bb1dbecdd1e6c8bfdf4e3e77604112c', 'bc6d5248e44540550d8243ff33d09a86b22038124867066e650336d72e6cf840')[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Example User', 'user@example.com', '2010-03-29 22:03:16', '2010-03-29 22:03:16', 'd872744c015424194ab8e8ddd9b983406bb1dbecdd1e6c8bfdf4e3e77604112c', 'bc6d5248e44540550d8243ff33d09a86b22038124867066e650336d72e6cf840')[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Example User', 'user@example.com', '2010-03-29 22:03:16', '2010-03-29 22:03:16', 'd872744c015424194ab8e8ddd9b983406bb1dbecdd1e6c8bfdf4e3e77604112c', 'bc6d5248e44540550d8243ff33d09a86b22038124867066e650336d72e6cf840')[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Example User', 'user@example.com', '2010-03-29 22:03:16', '2010-03-29 22:03:16', 'd872744c015424194ab8e8ddd9b983406bb1dbecdd1e6c8bfdf4e3e77604112c', 'bc6d5248e44540550d8243ff33d09a86b22038124867066e650336d72e6cf840')[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Example User', 'user@example.com', '2010-03-29 22:03:16', '2010-03-29 22:03:16', 'd872744c015424194ab8e8ddd9b983406bb1dbecdd1e6c8bfdf4e3e77604112c', 'bc6d5248e44540550d8243ff33d09a86b22038124867066e650336d72e6cf840')[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Example User', 'user@example.com', '2010-03-29 22:03:16', '2010-03-29 22:03:16', 'd872744c015424194ab8e8ddd9b983406bb1dbecdd1e6c8bfdf4e3e77604112c', 'bc6d5248e44540550d8243ff33d09a86b22038124867066e650336d72e6cf840')[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@foo.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'the_user@foo.bar.org') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'first.last@foo.jp') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@foo,com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user_at_foo.org') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'first.last@foo.') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Example User', 'user@example.com', '2010-03-29 22:03:16', '2010-03-29 22:03:16', 'd872744c015424194ab8e8ddd9b983406bb1dbecdd1e6c8bfdf4e3e77604112c', 'bc6d5248e44540550d8243ff33d09a86b22038124867066e650336d72e6cf840')[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-03-29 17:03:16) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.1ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 73ms (View: 72, DB: 7) | 200 OK [http://www.example.com/]
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-03-29 17:03:16) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/contact]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-03-29 17:03:16) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/about]
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-03-29 17:03:16) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/help]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-03-29 17:03:16) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-03-29 17:03:16) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-03-29 17:03:16) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/about]
+REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-03-29 17:03:16) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/help]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-29 22:03:16', '2010-03-29 22:03:16', 'd872744c015424194ab8e8ddd9b983406bb1dbecdd1e6c8bfdf4e3e77604112c', 'bc6d5248e44540550d8243ff33d09a86b22038124867066e650336d72e6cf840')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-29 17:03:16) [GET]
+  Parameters: {"id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-03-29 22:03:16", updated_at: "2010-03-29 22:03:16", encrypted_password: "d872744c015424194ab8e8ddd9b983406bb1dbecdd1e6c8bfdf...", salt: "bc6d5248e44540550d8243ff33d09a86b22038124867066e650...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 1) | 200 OK [http://test.host/users/1]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-29 22:03:16', '2010-03-29 22:03:16', 'd872744c015424194ab8e8ddd9b983406bb1dbecdd1e6c8bfdf4e3e77604112c', 'bc6d5248e44540550d8243ff33d09a86b22038124867066e650336d72e6cf840')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-29 17:03:16) [GET]
+  Parameters: {"id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-03-29 22:03:16", updated_at: "2010-03-29 22:03:16", encrypted_password: "d872744c015424194ab8e8ddd9b983406bb1dbecdd1e6c8bfdf...", salt: "bc6d5248e44540550d8243ff33d09a86b22038124867066e650...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://test.host/users/1]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-29 22:03:17', '2010-03-29 22:03:17', 'ef2167764a55a756d74c8ceb69940d6f4a6337944d7e36bcb15603e0bc27a697', '17604a88fff8c2f2bf3163589d3502e884d3f79b36adc19644d68122e7fa5c77')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-29 17:03:17) [GET]
+  Parameters: {"id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-03-29 22:03:17", updated_at: "2010-03-29 22:03:17", encrypted_password: "ef2167764a55a756d74c8ceb69940d6f4a6337944d7e36bcb15...", salt: "17604a88fff8c2f2bf3163589d3502e884d3f79b36adc19644d...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://test.host/users/1]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-29 22:03:17', '2010-03-29 22:03:17', 'ef2167764a55a756d74c8ceb69940d6f4a6337944d7e36bcb15603e0bc27a697', '17604a88fff8c2f2bf3163589d3502e884d3f79b36adc19644d68122e7fa5c77')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-29 17:03:17) [GET]
+  Parameters: {"id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-03-29 22:03:17", updated_at: "2010-03-29 22:03:17", encrypted_password: "ef2167764a55a756d74c8ceb69940d6f4a6337944d7e36bcb15...", salt: "17604a88fff8c2f2bf3163589d3502e884d3f79b36adc19644d...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://test.host/users/1]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-03-29 17:03:17) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-03-29 17:03:17) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-03-29 17:03:17) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/about]
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-03-29 17:03:17) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/about]
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-03-29 17:03:17) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/contact]
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-03-29 17:03:17) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/contact]
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-03-29 17:03:17) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/]
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-03-29 17:03:17) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Example User', 'user@example.com', '2010-03-29 23:40:19', '2010-03-29 23:40:19', '5fd7bfce7358e3e8775e14317b7604a0e0732ad0e8034661f4f4e9aa3ab288c8', 'e632dfdedcd96b9e30560f7d57819e73f8f984f1a0ceeafecfc628c72dab1a0e')[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Example User', 'user@example.com', '2010-03-29 23:40:19', '2010-03-29 23:40:19', 'e23f9dbbb8356d541a7b63c120891aac461e29d5cfc7d0b58c4ef4ab7c70f30a', 'c4eeebdfefa640c338c0c0e4b8cec2cb5f2db17b817e4ba79b42f04cc3f4c297')[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'bar@foo.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Example User', 'user@example.com', '2010-03-29 23:40:19', '2010-03-29 23:40:19', 'e23f9dbbb8356d541a7b63c120891aac461e29d5cfc7d0b58c4ef4ab7c70f30a', 'c4eeebdfefa640c338c0c0e4b8cec2cb5f2db17b817e4ba79b42f04cc3f4c297')[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Example User', 'user@example.com', '2010-03-29 23:40:19', '2010-03-29 23:40:19', 'e23f9dbbb8356d541a7b63c120891aac461e29d5cfc7d0b58c4ef4ab7c70f30a', 'c4eeebdfefa640c338c0c0e4b8cec2cb5f2db17b817e4ba79b42f04cc3f4c297')[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Example User', 'user@example.com', '2010-03-29 23:40:19', '2010-03-29 23:40:19', 'e23f9dbbb8356d541a7b63c120891aac461e29d5cfc7d0b58c4ef4ab7c70f30a', 'c4eeebdfefa640c338c0c0e4b8cec2cb5f2db17b817e4ba79b42f04cc3f4c297')[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Example User', 'user@example.com', '2010-03-29 23:40:19', '2010-03-29 23:40:19', 'e23f9dbbb8356d541a7b63c120891aac461e29d5cfc7d0b58c4ef4ab7c70f30a', 'c4eeebdfefa640c338c0c0e4b8cec2cb5f2db17b817e4ba79b42f04cc3f4c297')[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Example User', 'user@example.com', '2010-03-29 23:40:19', '2010-03-29 23:40:19', 'e23f9dbbb8356d541a7b63c120891aac461e29d5cfc7d0b58c4ef4ab7c70f30a', 'c4eeebdfefa640c338c0c0e4b8cec2cb5f2db17b817e4ba79b42f04cc3f4c297')[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Example User', 'user@example.com', '2010-03-29 23:40:19', '2010-03-29 23:40:19', 'e23f9dbbb8356d541a7b63c120891aac461e29d5cfc7d0b58c4ef4ab7c70f30a', 'c4eeebdfefa640c338c0c0e4b8cec2cb5f2db17b817e4ba79b42f04cc3f4c297')[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@foo.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'the_user@foo.bar.org') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'first.last@foo.jp') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@foo,com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user_at_foo.org') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'first.last@foo.') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Example User', 'user@example.com', '2010-03-29 23:40:19', '2010-03-29 23:40:19', 'e23f9dbbb8356d541a7b63c120891aac461e29d5cfc7d0b58c4ef4ab7c70f30a', 'c4eeebdfefa640c338c0c0e4b8cec2cb5f2db17b817e4ba79b42f04cc3f4c297')[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-03-29 18:40:19) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.2ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 37ms (View: 35, DB: 7) | 200 OK [http://www.example.com/]
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-03-29 18:40:19) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/contact]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-03-29 18:40:19) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/about]
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-03-29 18:40:19) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/help]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-03-29 18:40:19) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-03-29 18:40:19) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-03-29 18:40:19) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/about]
+REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-03-29 18:40:19) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/help]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-29 23:40:19', '2010-03-29 23:40:19', 'e23f9dbbb8356d541a7b63c120891aac461e29d5cfc7d0b58c4ef4ab7c70f30a', 'c4eeebdfefa640c338c0c0e4b8cec2cb5f2db17b817e4ba79b42f04cc3f4c297')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-29 18:40:19) [GET]
+  Parameters: {"id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-03-29 23:40:19", updated_at: "2010-03-29 23:40:19", encrypted_password: "e23f9dbbb8356d541a7b63c120891aac461e29d5cfc7d0b58c4...", salt: "c4eeebdfefa640c338c0c0e4b8cec2cb5f2db17b817e4ba79b4...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 1) | 200 OK [http://test.host/users/1]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-29 23:40:19', '2010-03-29 23:40:19', 'e23f9dbbb8356d541a7b63c120891aac461e29d5cfc7d0b58c4ef4ab7c70f30a', 'c4eeebdfefa640c338c0c0e4b8cec2cb5f2db17b817e4ba79b42f04cc3f4c297')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-29 18:40:19) [GET]
+  Parameters: {"id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-03-29 23:40:19", updated_at: "2010-03-29 23:40:19", encrypted_password: "e23f9dbbb8356d541a7b63c120891aac461e29d5cfc7d0b58c4...", salt: "c4eeebdfefa640c338c0c0e4b8cec2cb5f2db17b817e4ba79b4...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 1) | 200 OK [http://test.host/users/1]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-29 23:40:19', '2010-03-29 23:40:19', 'e23f9dbbb8356d541a7b63c120891aac461e29d5cfc7d0b58c4ef4ab7c70f30a', 'c4eeebdfefa640c338c0c0e4b8cec2cb5f2db17b817e4ba79b42f04cc3f4c297')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-29 18:40:19) [GET]
+  Parameters: {"id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-03-29 23:40:19", updated_at: "2010-03-29 23:40:19", encrypted_password: "e23f9dbbb8356d541a7b63c120891aac461e29d5cfc7d0b58c4...", salt: "c4eeebdfefa640c338c0c0e4b8cec2cb5f2db17b817e4ba79b4...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://test.host/users/1]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-29 23:40:19', '2010-03-29 23:40:19', 'e23f9dbbb8356d541a7b63c120891aac461e29d5cfc7d0b58c4ef4ab7c70f30a', 'c4eeebdfefa640c338c0c0e4b8cec2cb5f2db17b817e4ba79b42f04cc3f4c297')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-29 18:40:19) [GET]
+  Parameters: {"id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-03-29 23:40:19", updated_at: "2010-03-29 23:40:19", encrypted_password: "e23f9dbbb8356d541a7b63c120891aac461e29d5cfc7d0b58c4...", salt: "c4eeebdfefa640c338c0c0e4b8cec2cb5f2db17b817e4ba79b4...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 1) | 200 OK [http://test.host/users/1]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-03-29 18:40:19) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-03-29 18:40:19) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.5ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-03-29 18:40:19) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/about]
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-03-29 18:40:19) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/about]
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-03-29 18:40:19) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/contact]
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-03-29 18:40:19) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/contact]
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-03-29 18:40:19) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/]
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-03-29 18:40:19) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/]
