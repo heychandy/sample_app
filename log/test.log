@@ -5409,3 +5409,2244 @@ Rendered layouts/_header (0.3ms)
 Rendered layouts/_footer (0.2ms)
 Completed in 19ms (View: 17, DB: 0) | 200 OK [http://www.example.com/users]
   [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-03-31 10:25:33) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (1.2ms)
+Rendered layouts/_header (46.2ms)
+Rendered layouts/_footer (0.8ms)
+Completed in 83ms (View: 81, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-03-31 10:25:33) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-03-31 10:35:09) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (1.3ms)
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-03-31 10:35:09) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.6ms)
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-03-31 10:38:14) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (1.2ms)
+Rendered layouts/_header (41.2ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 78ms (View: 76, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-03-31 10:38:14) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-03-31 10:39:58) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (1.2ms)
+Rendered layouts/_header (41.3ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 78ms (View: 76, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-03-31 10:39:58) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-03-31 10:47:36) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+ERROR: compiling _run_erb_app47views47sessions47new46html46erb RAISED /Users/chandy/training/rails_projects/sample_app/app/views/sessions/new.html.erb:2: syntax error, unexpected ',', expecting ')'
+;  form_for (:session, :url => sessions_path) do |f...
+                      ^
+/Users/chandy/training/rails_projects/sample_app/app/views/sessions/new.html.erb:18: syntax error, unexpected keyword_ensure, expecting $end
+Function body:           def _run_erb_app47views47sessions47new46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h2>Sign in</h2>\n"
+;  form_for (:session, :url => sessions_path) do |f| ; @output_buffer.concat "\n\t<div class=\"field\">\n\t\t"
+
+; @output_buffer.concat(( f.label :email ).to_s); @output_buffer.concat "<br />\n\t\t"
+; @output_buffer.concat(( f.text_field :email ).to_s); @output_buffer.concat "\n\t</div>\n\t<div class=\"field\">\n\t\t"
+
+
+; @output_buffer.concat(( f.label :password ).to_s); @output_buffer.concat "\n\t\t"
+; @output_buffer.concat(( f.password_field :password).to_s); @output_buffer.concat "\n\t</div>\n\t<div class=\"actions\">\n\t\t"
+
+
+; @output_buffer.concat(( f.submit "Sign in" ).to_s); @output_buffer.concat "\n\t</div>\n"
+
+;  end ; @output_buffer.concat "\n\n<p>New user? "
+
+; @output_buffer.concat(( link_to "Sign up!", signup_path ).to_s); @output_buffer.concat "</p>\n"
+; @output_buffer.force_encoding(__ENCODING__)
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:77:in `module_eval'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:77:in `compile!'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/test_case.rb:20:in `render'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render_with_mock_proxy'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render_with_mock_proxy'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `block in render_with_benchmark'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/rspec-rails-1.3.2/lib/spec/rails/example/controller_example_group.rb:233:in `render'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_with_filters'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `block in perform_action_with_benchmark'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_with_rescue'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action_with_flash'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process_with_filters'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/test_process.rb:567:in `process_with_test'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/test_process.rb:447:in `process'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/test_process.rb:398:in `get'
+/Users/chandy/training/rails_projects/sample_app/spec/controllers/sessions_controller_spec.rb:8:in `block (3 levels) in <top (required)>'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/rspec-1.3.0/lib/spec/example/example_methods.rb:40:in `instance_eval'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/rspec-1.3.0/lib/spec/example/example_methods.rb:40:in `block in execute'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/1.9.1/timeout.rb:44:in `timeout'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/rspec-1.3.0/lib/spec/example/example_methods.rb:37:in `execute'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/rspec-1.3.0/lib/spec/example/example_group_methods.rb:214:in `block in run_examples'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/rspec-1.3.0/lib/spec/example/example_group_methods.rb:212:in `each'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/rspec-1.3.0/lib/spec/example/example_group_methods.rb:212:in `run_examples'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/rspec-1.3.0/lib/spec/example/example_group_methods.rb:103:in `run'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:23:in `block in run'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:22:in `each'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:22:in `run'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/rspec-1.3.0/lib/spec/runner/options.rb:152:in `run_examples'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/rspec-1.3.0/bin/spec:5:in `<top (required)>'
+/Users/chandy/.multiruby/install/1.9.1-p378/bin/spec:19:in `load'
+/Users/chandy/.multiruby/install/1.9.1-p378/bin/spec:19:in `<main>'
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-03-31 10:47:36) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+ERROR: compiling _run_erb_app47views47sessions47new46html46erb RAISED /Users/chandy/training/rails_projects/sample_app/app/views/sessions/new.html.erb:2: syntax error, unexpected ',', expecting ')'
+;  form_for (:session, :url => sessions_path) do |f...
+                      ^
+/Users/chandy/training/rails_projects/sample_app/app/views/sessions/new.html.erb:18: syntax error, unexpected keyword_ensure, expecting $end
+Function body:           def _run_erb_app47views47sessions47new46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h2>Sign in</h2>\n"
+;  form_for (:session, :url => sessions_path) do |f| ; @output_buffer.concat "\n\t<div class=\"field\">\n\t\t"
+
+; @output_buffer.concat(( f.label :email ).to_s); @output_buffer.concat "<br />\n\t\t"
+; @output_buffer.concat(( f.text_field :email ).to_s); @output_buffer.concat "\n\t</div>\n\t<div class=\"field\">\n\t\t"
+
+
+; @output_buffer.concat(( f.label :password ).to_s); @output_buffer.concat "\n\t\t"
+; @output_buffer.concat(( f.password_field :password).to_s); @output_buffer.concat "\n\t</div>\n\t<div class=\"actions\">\n\t\t"
+
+
+; @output_buffer.concat(( f.submit "Sign in" ).to_s); @output_buffer.concat "\n\t</div>\n"
+
+;  end ; @output_buffer.concat "\n\n<p>New user? "
+
+; @output_buffer.concat(( link_to "Sign up!", signup_path ).to_s); @output_buffer.concat "</p>\n"
+; @output_buffer.force_encoding(__ENCODING__)
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:77:in `module_eval'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:77:in `compile!'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/test_case.rb:20:in `render'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render_with_mock_proxy'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render_with_mock_proxy'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `block in render_with_benchmark'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/rspec-rails-1.3.2/lib/spec/rails/example/controller_example_group.rb:233:in `render'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_with_filters'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `block in perform_action_with_benchmark'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_with_rescue'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action_with_flash'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process_with_filters'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/test_process.rb:567:in `process_with_test'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/test_process.rb:447:in `process'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/test_process.rb:398:in `get'
+/Users/chandy/training/rails_projects/sample_app/spec/controllers/sessions_controller_spec.rb:13:in `block (3 levels) in <top (required)>'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/rspec-1.3.0/lib/spec/example/example_methods.rb:40:in `instance_eval'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/rspec-1.3.0/lib/spec/example/example_methods.rb:40:in `block in execute'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/1.9.1/timeout.rb:44:in `timeout'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/rspec-1.3.0/lib/spec/example/example_methods.rb:37:in `execute'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/rspec-1.3.0/lib/spec/example/example_group_methods.rb:214:in `block in run_examples'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/rspec-1.3.0/lib/spec/example/example_group_methods.rb:212:in `each'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/rspec-1.3.0/lib/spec/example/example_group_methods.rb:212:in `run_examples'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/rspec-1.3.0/lib/spec/example/example_group_methods.rb:103:in `run'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:23:in `block in run'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:22:in `each'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:22:in `run'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/rspec-1.3.0/lib/spec/runner/options.rb:152:in `run_examples'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/rspec-1.3.0/bin/spec:5:in `<top (required)>'
+/Users/chandy/.multiruby/install/1.9.1-p378/bin/spec:19:in `load'
+/Users/chandy/.multiruby/install/1.9.1-p378/bin/spec:19:in `<main>'
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-03-31 10:49:57) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (1.2ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 78ms (View: 77, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-03-31 10:49:57) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-03-31 11:27:00) [POST]
+  Parameters: {"session"=>{"email"=>"user4@example.com", "password"=>"[FILTERED]"}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (1.2ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 79ms (View: 77, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=user4%40example.com&session%5Bpassword%5D=password]
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-03-31 11:27:01) [POST]
+  Parameters: {"session"=>{"email"=>"user4@example.com", "password"=>"[FILTERED]"}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 1) | 200 OK [http://test.host/sessions?session%5Bemail%5D=user4%40example.com&session%5Bpassword%5D=password]
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-03-31 11:27:01) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-03-31 11:27:01) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-03-31 11:31:02) [POST]
+  Parameters: {"session"=>{"email"=>"user4@example.com", "password"=>"[FILTERED]"}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (1.2ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 79ms (View: 77, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=user4%40example.com&session%5Bpassword%5D=password]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-03-31 11:31:02) [POST]
+  Parameters: {"session"=>{"email"=>"user4@example.com", "password"=>"[FILTERED]"}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=user4%40example.com&session%5Bpassword%5D=password]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-03-31 11:31:02) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-03-31 11:31:02) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (8.6ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 19:47:45', '2010-03-31 19:47:45', '095ae8e6cb3f12b2097c71b9b2a505a7995d4508d86dde07da8c2e0245808fd2', 'f3aafea508c52cbc52b15a57c390211894f55f3393821d9a009bccc23f82f633', NULL)[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-03-31 14:47:45) [POST]
+  Parameters: {"session"=>{"email"=>"mhartl@example.com", "password"=>"[FILTERED]"}, "action"=>"create", "controller"=>"sessions"}
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE "users" SET "remember_token" = '11afb7d2f110af7f9b159b296f323581652c7b05bd7621ee1841003cc23a095d', "updated_at" = '2010-03-31 19:47:45' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 250ms (DB: 9) | 302 Found [http://test.host/sessions?session%5Bemail%5D=mhartl%40example.com&session%5Bpassword%5D=foobar]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 19:47:45', '2010-03-31 19:47:45', '095ae8e6cb3f12b2097c71b9b2a505a7995d4508d86dde07da8c2e0245808fd2', 'f3aafea508c52cbc52b15a57c390211894f55f3393821d9a009bccc23f82f633', NULL)[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-03-31 14:47:45) [POST]
+  Parameters: {"session"=>{"email"=>"mhartl@example.com", "password"=>"[FILTERED]"}, "action"=>"create", "controller"=>"sessions"}
+  [4;35;1mUser Update (0.1ms)[0m   [0mUPDATE "users" SET "remember_token" = '11afb7d2f110af7f9b159b296f323581652c7b05bd7621ee1841003cc23a095d', "updated_at" = '2010-03-31 19:47:45' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/sessions?session%5Bemail%5D=mhartl%40example.com&session%5Bpassword%5D=foobar]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-03-31 14:47:45) [POST]
+  Parameters: {"session"=>{"email"=>"user4@example.com", "password"=>"[FILTERED]"}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (1.1ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 38ms (View: 38, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=user4%40example.com&session%5Bpassword%5D=password]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-03-31 14:47:45) [POST]
+  Parameters: {"session"=>{"email"=>"user4@example.com", "password"=>"[FILTERED]"}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=user4%40example.com&session%5Bpassword%5D=password]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-03-31 14:47:45) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-03-31 14:47:45) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+Rendering sessions/new
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Example User', 'user@example.com', '2010-03-31 19:48:28', '2010-03-31 19:48:28', '4ffc5716e811e917cc191400dd04d5b990ba89a3e99596078e7d31451c715195', '252024ecf7bc1ec0eb4191340a81d44bdc301ed3181308c6e027fac1b563cf07', NULL)[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Example User', 'user@example.com', '2010-03-31 19:48:28', '2010-03-31 19:48:28', '4ffc5716e811e917cc191400dd04d5b990ba89a3e99596078e7d31451c715195', '252024ecf7bc1ec0eb4191340a81d44bdc301ed3181308c6e027fac1b563cf07', NULL)[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'bar@foo.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Example User', 'user@example.com', '2010-03-31 19:48:28', '2010-03-31 19:48:28', '4ffc5716e811e917cc191400dd04d5b990ba89a3e99596078e7d31451c715195', '252024ecf7bc1ec0eb4191340a81d44bdc301ed3181308c6e027fac1b563cf07', NULL)[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Example User', 'user@example.com', '2010-03-31 19:48:28', '2010-03-31 19:48:28', '4ffc5716e811e917cc191400dd04d5b990ba89a3e99596078e7d31451c715195', '252024ecf7bc1ec0eb4191340a81d44bdc301ed3181308c6e027fac1b563cf07', NULL)[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Example User', 'user@example.com', '2010-03-31 19:48:28', '2010-03-31 19:48:28', '4ffc5716e811e917cc191400dd04d5b990ba89a3e99596078e7d31451c715195', '252024ecf7bc1ec0eb4191340a81d44bdc301ed3181308c6e027fac1b563cf07', NULL)[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Example User', 'user@example.com', '2010-03-31 19:48:28', '2010-03-31 19:48:28', '4ffc5716e811e917cc191400dd04d5b990ba89a3e99596078e7d31451c715195', '252024ecf7bc1ec0eb4191340a81d44bdc301ed3181308c6e027fac1b563cf07', NULL)[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Example User', 'user@example.com', '2010-03-31 19:48:28', '2010-03-31 19:48:28', '4ffc5716e811e917cc191400dd04d5b990ba89a3e99596078e7d31451c715195', '252024ecf7bc1ec0eb4191340a81d44bdc301ed3181308c6e027fac1b563cf07', NULL)[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Example User', 'user@example.com', '2010-03-31 19:48:28', '2010-03-31 19:48:28', '4ffc5716e811e917cc191400dd04d5b990ba89a3e99596078e7d31451c715195', '252024ecf7bc1ec0eb4191340a81d44bdc301ed3181308c6e027fac1b563cf07', NULL)[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@foo.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'the_user@foo.bar.org') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'first.last@foo.jp') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@foo,com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user_at_foo.org') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'first.last@foo.') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Example User', 'user@example.com', '2010-03-31 19:48:28', '2010-03-31 19:48:28', '4ffc5716e811e917cc191400dd04d5b990ba89a3e99596078e7d31451c715195', '252024ecf7bc1ec0eb4191340a81d44bdc301ed3181308c6e027fac1b563cf07', NULL)[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+REQUESTING PAGE: GET http://www.example.com/signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-03-31 14:48:28) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.2ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 49ms (View: 48, DB: 7) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"user"=>{"name"=>"Example User", "email"=>"user4@example.com", "password"=>"foobar", "password_confirmation"=>"foobar"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-03-31 14:48:29) [POST]
+  Parameters: {"user"=>{"name"=>"Example User", "email"=>"user4@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up", "controller"=>"users", "action"=>"create"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user4@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Example User', 'user4@example.com', '2010-03-31 19:48:29', '2010-03-31 19:48:29', 'eca3fb34330e2cfba0c306a1da854e98b9b47bc9287397d1b839cd93adf5a4b8', '69d862bba094eb0819d03875f71c931c58d1bdfab874d0af13da341a7e3ebae9', NULL)[0m
+Redirected to http://www.example.com/users/1
+Completed in 4ms (DB: 1) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/1 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-03-31 14:48:29) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://www.example.com/users/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+REQUESTING PAGE: GET http://www.example.com/signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-03-31 14:48:29) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-03-31 14:48:29) [POST]
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up", "controller"=>"users", "action"=>"create"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 18ms (View: 17, DB: 0) | 200 OK [http://www.example.com/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-03-31 14:48:29) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-03-31 14:48:29) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"contact"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://www.example.com/contact]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-03-31 14:48:29) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"about"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/about]
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-03-31 14:48:29) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"help"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/help]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-03-31 14:48:29) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-03-31 14:48:29) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-03-31 14:48:29) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"about"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/about]
+REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-03-31 14:48:29) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"help"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/help]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-31 14:48:29) [POST]
+  Parameters: {"user"=>{"name"=>"New User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+Redirected to http://test.host/users
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/users?user%5Bemail%5D=user%40example.com&user%5Bname%5D=New+User&user%5Bpassword%5D=foobar&user%5Bpassword_confirmation%5D=foobar]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-31 14:48:29) [POST]
+  Parameters: {"user"=>{"name"=>"New User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('New User', 'user@example.com', '2010-03-31 19:48:29', '2010-03-31 19:48:29', 'eca3fb34330e2cfba0c306a1da854e98b9b47bc9287397d1b839cd93adf5a4b8', '69d862bba094eb0819d03875f71c931c58d1bdfab874d0af13da341a7e3ebae9', NULL)[0m
+Redirected to http://test.host/users/1
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/users?user%5Bemail%5D=user%40example.com&user%5Bname%5D=New+User&user%5Bpassword%5D=foobar&user%5Bpassword_confirmation%5D=foobar]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-31 14:48:29) [POST]
+  Parameters: {"user"=>{"name"=>"New User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('New User', 'user@example.com', '2010-03-31 19:48:29', '2010-03-31 19:48:29', 'eca3fb34330e2cfba0c306a1da854e98b9b47bc9287397d1b839cd93adf5a4b8', '69d862bba094eb0819d03875f71c931c58d1bdfab874d0af13da341a7e3ebae9', NULL)[0m
+Redirected to http://test.host/users/1
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/users?user%5Bemail%5D=user%40example.com&user%5Bname%5D=New+User&user%5Bpassword%5D=foobar&user%5Bpassword_confirmation%5D=foobar]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-31 14:48:29) [POST]
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-31 14:48:29) [POST]
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 66ms (View: 64, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-31 14:48:29) [POST]
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 16ms (View: 14, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 19:48:29', '2010-03-31 19:48:29', 'eca3fb34330e2cfba0c306a1da854e98b9b47bc9287397d1b839cd93adf5a4b8', '69d862bba094eb0819d03875f71c931c58d1bdfab874d0af13da341a7e3ebae9', NULL)[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-31 14:48:29) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-03-31 19:48:29", updated_at: "2010-03-31 19:48:29", encrypted_password: "eca3fb34330e2cfba0c306a1da854e98b9b47bc9287397d1b83...", salt: "69d862bba094eb0819d03875f71c931c58d1bdfab874d0af13d...", remember_token: nil>, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 1) | 200 OK [http://test.host/users/1]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 19:48:29', '2010-03-31 19:48:29', 'eca3fb34330e2cfba0c306a1da854e98b9b47bc9287397d1b839cd93adf5a4b8', '69d862bba094eb0819d03875f71c931c58d1bdfab874d0af13da341a7e3ebae9', NULL)[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-31 14:48:29) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-03-31 19:48:29", updated_at: "2010-03-31 19:48:29", encrypted_password: "eca3fb34330e2cfba0c306a1da854e98b9b47bc9287397d1b83...", salt: "69d862bba094eb0819d03875f71c931c58d1bdfab874d0af13d...", remember_token: nil>, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 1) | 200 OK [http://test.host/users/1]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 19:48:29', '2010-03-31 19:48:29', 'eca3fb34330e2cfba0c306a1da854e98b9b47bc9287397d1b839cd93adf5a4b8', '69d862bba094eb0819d03875f71c931c58d1bdfab874d0af13da341a7e3ebae9', NULL)[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-31 14:48:29) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-03-31 19:48:29", updated_at: "2010-03-31 19:48:29", encrypted_password: "eca3fb34330e2cfba0c306a1da854e98b9b47bc9287397d1b83...", salt: "69d862bba094eb0819d03875f71c931c58d1bdfab874d0af13d...", remember_token: nil>, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 1) | 200 OK [http://test.host/users/1]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 19:48:29', '2010-03-31 19:48:29', 'eca3fb34330e2cfba0c306a1da854e98b9b47bc9287397d1b839cd93adf5a4b8', '69d862bba094eb0819d03875f71c931c58d1bdfab874d0af13da341a7e3ebae9', NULL)[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-31 14:48:29) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-03-31 19:48:29", updated_at: "2010-03-31 19:48:29", encrypted_password: "eca3fb34330e2cfba0c306a1da854e98b9b47bc9287397d1b83...", salt: "69d862bba094eb0819d03875f71c931c58d1bdfab874d0af13d...", remember_token: nil>, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 1) | 200 OK [http://test.host/users/1]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-03-31 14:48:29) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-03-31 14:48:29) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 19:48:29', '2010-03-31 19:48:29', 'eca3fb34330e2cfba0c306a1da854e98b9b47bc9287397d1b839cd93adf5a4b8', '69d862bba094eb0819d03875f71c931c58d1bdfab874d0af13da341a7e3ebae9', NULL)[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-03-31 14:48:29) [POST]
+  Parameters: {"session"=>{"email"=>"mhartl@example.com", "password"=>"[FILTERED]"}, "action"=>"create", "controller"=>"sessions"}
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE "users" SET "remember_token" = '18c91042fd1bb79cdc02f4948a54429766b9df9968961b0713a454afda0d2027', "updated_at" = '2010-03-31 19:48:29' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 214ms (DB: 1) | 302 Found [http://test.host/sessions?session%5Bemail%5D=mhartl%40example.com&session%5Bpassword%5D=foobar]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 19:48:29', '2010-03-31 19:48:29', 'eca3fb34330e2cfba0c306a1da854e98b9b47bc9287397d1b839cd93adf5a4b8', '69d862bba094eb0819d03875f71c931c58d1bdfab874d0af13da341a7e3ebae9', NULL)[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-03-31 14:48:29) [POST]
+  Parameters: {"session"=>{"email"=>"mhartl@example.com", "password"=>"[FILTERED]"}, "action"=>"create", "controller"=>"sessions"}
+  [4;35;1mUser Update (0.1ms)[0m   [0mUPDATE "users" SET "remember_token" = '18c91042fd1bb79cdc02f4948a54429766b9df9968961b0713a454afda0d2027', "updated_at" = '2010-03-31 19:48:29' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/sessions?session%5Bemail%5D=mhartl%40example.com&session%5Bpassword%5D=foobar]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-03-31 14:48:29) [POST]
+  Parameters: {"session"=>{"email"=>"user4@example.com", "password"=>"[FILTERED]"}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=user4%40example.com&session%5Bpassword%5D=password]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-03-31 14:48:29) [POST]
+  Parameters: {"session"=>{"email"=>"user4@example.com", "password"=>"[FILTERED]"}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=user4%40example.com&session%5Bpassword%5D=password]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-03-31 14:48:29) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-03-31 14:48:29) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-03-31 14:48:29) [GET]
+  Parameters: {"action"=>"about", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/about]
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-03-31 14:48:29) [GET]
+  Parameters: {"action"=>"about", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/about]
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-03-31 14:48:29) [GET]
+  Parameters: {"action"=>"contact", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/contact]
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-03-31 14:48:29) [GET]
+  Parameters: {"action"=>"contact", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/contact]
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-03-31 14:48:29) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/pages/home]
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-03-31 14:48:29) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/pages/home]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+REQUESTING PAGE: GET http://www.example.com/signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-03-31 14:52:12) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (36.2ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 143ms (View: 141, DB: 0) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"user"=>{"name"=>"Example User", "email"=>"user4@example.com", "password"=>"foobar", "password_confirmation"=>"foobar"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-03-31 14:52:12) [POST]
+  Parameters: {"user"=>{"name"=>"Example User", "email"=>"user4@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up", "controller"=>"users", "action"=>"create"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user4@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (33.4ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Example User', 'user4@example.com', '2010-03-31 19:52:12', '2010-03-31 19:52:12', '8cdc4eea1b19128c0d8c70bdec8299378eeb879fb86d6482a1877be157ce2874', '2ab9fa7844bb5fa4326cb5baf472703107fa54dbdc6fdacf0fd16faeb7b10a74', NULL)[0m
+Redirected to http://www.example.com/users/1
+Completed in 62ms (DB: 34) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/1 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-03-31 14:52:12) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://www.example.com/users/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+REQUESTING PAGE: GET http://www.example.com/signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-03-31 14:52:12) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-03-31 14:52:12) [POST]
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up", "controller"=>"users", "action"=>"create"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 19ms (View: 17, DB: 0) | 200 OK [http://www.example.com/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 19:58:11', '2010-03-31 19:58:11', 'a5e7af694386389967bfce2192d775191a559e7876f266df6921413266b79fb0', '51f68cc03500c15c39bc354e73d8c9d30ae28d098b54d240c476282e8fc424a9', NULL)[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 19:58:11', '2010-03-31 19:58:11', 'a5e7af694386389967bfce2192d775191a559e7876f266df6921413266b79fb0', '51f68cc03500c15c39bc354e73d8c9d30ae28d098b54d240c476282e8fc424a9', NULL)[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 19:58:11', '2010-03-31 19:58:11', 'a5e7af694386389967bfce2192d775191a559e7876f266df6921413266b79fb0', '51f68cc03500c15c39bc354e73d8c9d30ae28d098b54d240c476282e8fc424a9', NULL)[0m
+  [4;36;1mUser Update (0.1ms)[0m   [0;1mUPDATE "users" SET "remember_token" = '770587ccc505b470b3e25b391e440c9f0923303d10f9e03498e9ff743247bd67', "updated_at" = '2010-03-31 19:58:11' WHERE "id" = 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+REQUESTING PAGE: GET http://www.example.com/signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-03-31 14:58:11) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.2ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 65ms (View: 63, DB: 2) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"user"=>{"name"=>"Example User", "email"=>"user4@example.com", "password"=>"foobar", "password_confirmation"=>"foobar"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-03-31 14:58:11) [POST]
+  Parameters: {"user"=>{"name"=>"Example User", "email"=>"user4@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up", "controller"=>"users", "action"=>"create"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user4@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Example User', 'user4@example.com', '2010-03-31 19:58:11', '2010-03-31 19:58:11', 'a5e7af694386389967bfce2192d775191a559e7876f266df6921413266b79fb0', '51f68cc03500c15c39bc354e73d8c9d30ae28d098b54d240c476282e8fc424a9', NULL)[0m
+Redirected to http://www.example.com/users/1
+Completed in 4ms (DB: 1) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/1 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-03-31 14:58:11) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://www.example.com/users/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+REQUESTING PAGE: GET http://www.example.com/signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-03-31 14:58:11) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-03-31 14:58:11) [POST]
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up", "controller"=>"users", "action"=>"create"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 19ms (View: 17, DB: 0) | 200 OK [http://www.example.com/users]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 19:58:59', '2010-03-31 19:58:59', '7a21c0ab0e557a25acde4b55e562a6e8f673e86f7f8a0d4d296c87459f1d452a', '33d3254049dea5c0c8065e35603511cd2079cc327ddc9be042ffcd5bec58eb90', NULL)[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-03-31 14:58:59) [POST]
+  Parameters: {"session"=>{"email"=>"mhartl@example.com", "password"=>"[FILTERED]"}, "action"=>"create", "controller"=>"sessions"}
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE "users" SET "remember_token" = '2f1d77feb2054a6e5099de6f76e4d636ed62824fabd78f2cb41a648f8bbda786', "updated_at" = '2010-03-31 19:58:59' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 562ms (DB: 1) | 302 Found [http://test.host/sessions?session%5Bemail%5D=mhartl%40example.com&session%5Bpassword%5D=foobar]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 19:59:00', '2010-03-31 19:59:00', 'e507bcba6084c15e877be69aa63b963ef5add069adbf05d9d924b8f0e8528418', '612d733f3f1f33081c9dd85614dbe9a956d348306c1caac436266bb33eed8883', NULL)[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-03-31 14:59:00) [POST]
+  Parameters: {"session"=>{"email"=>"mhartl@example.com", "password"=>"[FILTERED]"}, "action"=>"create", "controller"=>"sessions"}
+  [4;35;1mUser Update (0.1ms)[0m   [0mUPDATE "users" SET "remember_token" = '0835cd1c56c2413c00dc3c376663c319a6d3aa41ae4f855fc58da69c1245cb3b', "updated_at" = '2010-03-31 19:59:00' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/sessions?session%5Bemail%5D=mhartl%40example.com&session%5Bpassword%5D=foobar]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-03-31 14:59:00) [POST]
+  Parameters: {"session"=>{"email"=>"user4@example.com", "password"=>"[FILTERED]"}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (1.2ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 38ms (View: 38, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=user4%40example.com&session%5Bpassword%5D=password]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-03-31 14:59:00) [POST]
+  Parameters: {"session"=>{"email"=>"user4@example.com", "password"=>"[FILTERED]"}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=user4%40example.com&session%5Bpassword%5D=password]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-03-31 14:59:00) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-03-31 14:59:00) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (63.6ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 20:18:20', '2010-03-31 20:18:20', '3b2e9d3c88de46bd1216279c6c3807e7b835e6307e578abe2bbb5ce2aab17318', 'f1ab40272c498f31d3447f18a125a05ef703f53d30bc12e30cf2580c3d8e759f', NULL)[0m
+
+
+Processing SessionsController#destroy (for 0.0.0.0 at 2010-03-31 15:18:20) [DELETE]
+  Parameters: {"action"=>"destroy", "controller"=>"sessions"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 20:18:20', '2010-03-31 20:18:20', '3b2e9d3c88de46bd1216279c6c3807e7b835e6307e578abe2bbb5ce2aab17318', 'f1ab40272c498f31d3447f18a125a05ef703f53d30bc12e30cf2580c3d8e759f', NULL)[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-03-31 15:18:20) [POST]
+  Parameters: {"session"=>{"email"=>"mhartl@example.com", "password"=>"[FILTERED]"}, "action"=>"create", "controller"=>"sessions"}
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE "users" SET "remember_token" = '216620b64aff47b2cce349a7646a45b15ccdccf5a66dd44386c3398bcb2fe4a9', "updated_at" = '2010-03-31 20:18:20' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 212ms (DB: 1) | 302 Found [http://test.host/sessions?session%5Bemail%5D=mhartl%40example.com&session%5Bpassword%5D=foobar]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 20:18:20', '2010-03-31 20:18:20', '3b2e9d3c88de46bd1216279c6c3807e7b835e6307e578abe2bbb5ce2aab17318', 'f1ab40272c498f31d3447f18a125a05ef703f53d30bc12e30cf2580c3d8e759f', NULL)[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-03-31 15:18:20) [POST]
+  Parameters: {"session"=>{"email"=>"mhartl@example.com", "password"=>"[FILTERED]"}, "action"=>"create", "controller"=>"sessions"}
+  [4;35;1mUser Update (0.1ms)[0m   [0mUPDATE "users" SET "remember_token" = '216620b64aff47b2cce349a7646a45b15ccdccf5a66dd44386c3398bcb2fe4a9', "updated_at" = '2010-03-31 20:18:20' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/sessions?session%5Bemail%5D=mhartl%40example.com&session%5Bpassword%5D=foobar]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-03-31 15:18:20) [POST]
+  Parameters: {"session"=>{"email"=>"user4@example.com", "password"=>"[FILTERED]"}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (1.2ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 38ms (View: 37, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=user4%40example.com&session%5Bpassword%5D=password]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-03-31 15:18:20) [POST]
+  Parameters: {"session"=>{"email"=>"user4@example.com", "password"=>"[FILTERED]"}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=user4%40example.com&session%5Bpassword%5D=password]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-03-31 15:18:21) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-03-31 15:18:21) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.8ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 20:20:18', '2010-03-31 20:20:18', '93cc2e7da264e39f9777a1cedc47956d3c3581e7759d1f3e4344a38666c4ec7d', 'ce91c1a4f54845aa32f201ba9180062008f0cca2d58da7269e69985b18efe1a6', NULL)[0m
+
+
+Processing SessionsController#destroy (for 0.0.0.0 at 2010-03-31 15:20:18) [DELETE]
+  Parameters: {"action"=>"destroy", "controller"=>"sessions"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 20:20:18', '2010-03-31 20:20:18', '93cc2e7da264e39f9777a1cedc47956d3c3581e7759d1f3e4344a38666c4ec7d', 'ce91c1a4f54845aa32f201ba9180062008f0cca2d58da7269e69985b18efe1a6', NULL)[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-03-31 15:20:18) [POST]
+  Parameters: {"session"=>{"email"=>"mhartl@example.com", "password"=>"[FILTERED]"}, "action"=>"create", "controller"=>"sessions"}
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE "users" SET "remember_token" = '9b698d847611ea2cf5035afc2dff85b16a6e0d6cb7640dadf7460460c9c9d4db', "updated_at" = '2010-03-31 20:20:18' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 197ms (DB: 2) | 302 Found [http://test.host/sessions?session%5Bemail%5D=mhartl%40example.com&session%5Bpassword%5D=foobar]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 20:20:18', '2010-03-31 20:20:18', '93cc2e7da264e39f9777a1cedc47956d3c3581e7759d1f3e4344a38666c4ec7d', 'ce91c1a4f54845aa32f201ba9180062008f0cca2d58da7269e69985b18efe1a6', NULL)[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-03-31 15:20:18) [POST]
+  Parameters: {"session"=>{"email"=>"mhartl@example.com", "password"=>"[FILTERED]"}, "action"=>"create", "controller"=>"sessions"}
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE "users" SET "remember_token" = '9b698d847611ea2cf5035afc2dff85b16a6e0d6cb7640dadf7460460c9c9d4db', "updated_at" = '2010-03-31 20:20:18' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/sessions?session%5Bemail%5D=mhartl%40example.com&session%5Bpassword%5D=foobar]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-03-31 15:20:18) [POST]
+  Parameters: {"session"=>{"email"=>"user4@example.com", "password"=>"[FILTERED]"}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (1.2ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 38ms (View: 37, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=user4%40example.com&session%5Bpassword%5D=password]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-03-31 15:20:18) [POST]
+  Parameters: {"session"=>{"email"=>"user4@example.com", "password"=>"[FILTERED]"}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=user4%40example.com&session%5Bpassword%5D=password]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-03-31 15:20:19) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-03-31 15:20:19) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 20:22:07', '2010-03-31 20:22:07', '0ae2b87f198b0d6352545aefb294df7f4583919d35f7a2c54cff1949f00b77c2', '4d0e6d09b2273f19e4a0f6d4a61eea4f0faea37ae2230cf65ad7f32d67eb5f80', NULL)[0m
+
+
+Processing SessionsController#destroy (for 0.0.0.0 at 2010-03-31 15:22:07) [DELETE]
+  Parameters: {"action"=>"destroy", "controller"=>"sessions"}
+Redirected to http://test.host/
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/signout]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 20:22:07', '2010-03-31 20:22:07', '0ae2b87f198b0d6352545aefb294df7f4583919d35f7a2c54cff1949f00b77c2', '4d0e6d09b2273f19e4a0f6d4a61eea4f0faea37ae2230cf65ad7f32d67eb5f80', NULL)[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-03-31 15:22:07) [POST]
+  Parameters: {"session"=>{"email"=>"mhartl@example.com", "password"=>"[FILTERED]"}, "action"=>"create", "controller"=>"sessions"}
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE "users" SET "remember_token" = '1d84f17717c52773a329b76e31a8e56dfb07fbb7fe917cf44053453bf4765d3f', "updated_at" = '2010-03-31 20:22:07' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 196ms (DB: 1) | 302 Found [http://test.host/sessions?session%5Bemail%5D=mhartl%40example.com&session%5Bpassword%5D=foobar]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 20:22:07', '2010-03-31 20:22:07', '0ae2b87f198b0d6352545aefb294df7f4583919d35f7a2c54cff1949f00b77c2', '4d0e6d09b2273f19e4a0f6d4a61eea4f0faea37ae2230cf65ad7f32d67eb5f80', NULL)[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-03-31 15:22:07) [POST]
+  Parameters: {"session"=>{"email"=>"mhartl@example.com", "password"=>"[FILTERED]"}, "action"=>"create", "controller"=>"sessions"}
+  [4;35;1mUser Update (0.1ms)[0m   [0mUPDATE "users" SET "remember_token" = '1d84f17717c52773a329b76e31a8e56dfb07fbb7fe917cf44053453bf4765d3f', "updated_at" = '2010-03-31 20:22:07' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/sessions?session%5Bemail%5D=mhartl%40example.com&session%5Bpassword%5D=foobar]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-03-31 15:22:07) [POST]
+  Parameters: {"session"=>{"email"=>"user4@example.com", "password"=>"[FILTERED]"}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (1.2ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 38ms (View: 38, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=user4%40example.com&session%5Bpassword%5D=password]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-03-31 15:22:07) [POST]
+  Parameters: {"session"=>{"email"=>"user4@example.com", "password"=>"[FILTERED]"}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=user4%40example.com&session%5Bpassword%5D=password]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-03-31 15:22:07) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-03-31 15:22:07) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 20:31:32', '2010-03-31 20:31:32', 'c4bcb2bf61f6b03a296a81e4ecc398d72760a23e3b33f29c4b24c8d2fa981b93', 'eedd4e443cff66a202edf66ec7a0b3ca449232e1c7110dd3e4a12096dc73e884', NULL)[0m
+
+
+Processing SessionsController#destroy (for 0.0.0.0 at 2010-03-31 15:31:32) [DELETE]
+  Parameters: {"action"=>"destroy", "controller"=>"sessions"}
+Redirected to http://test.host/
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/signout]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 20:31:32', '2010-03-31 20:31:32', 'c4bcb2bf61f6b03a296a81e4ecc398d72760a23e3b33f29c4b24c8d2fa981b93', 'eedd4e443cff66a202edf66ec7a0b3ca449232e1c7110dd3e4a12096dc73e884', NULL)[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-03-31 15:31:32) [POST]
+  Parameters: {"session"=>{"email"=>"mhartl@example.com", "password"=>"[FILTERED]"}, "action"=>"create", "controller"=>"sessions"}
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE "users" SET "remember_token" = '4b4e82c5890c878b7a2afdd2145fabfe42937984916e7b966bdfe386518d30da', "updated_at" = '2010-03-31 20:31:32' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 216ms (DB: 1) | 302 Found [http://test.host/sessions?session%5Bemail%5D=mhartl%40example.com&session%5Bpassword%5D=foobar]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 20:31:32', '2010-03-31 20:31:32', 'c4bcb2bf61f6b03a296a81e4ecc398d72760a23e3b33f29c4b24c8d2fa981b93', 'eedd4e443cff66a202edf66ec7a0b3ca449232e1c7110dd3e4a12096dc73e884', NULL)[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-03-31 15:31:32) [POST]
+  Parameters: {"session"=>{"email"=>"mhartl@example.com", "password"=>"[FILTERED]"}, "action"=>"create", "controller"=>"sessions"}
+  [4;35;1mUser Update (0.1ms)[0m   [0mUPDATE "users" SET "remember_token" = '4b4e82c5890c878b7a2afdd2145fabfe42937984916e7b966bdfe386518d30da', "updated_at" = '2010-03-31 20:31:32' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/sessions?session%5Bemail%5D=mhartl%40example.com&session%5Bpassword%5D=foobar]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-03-31 15:31:32) [POST]
+  Parameters: {"session"=>{"email"=>"user4@example.com", "password"=>"[FILTERED]"}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (1.2ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 38ms (View: 38, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=user4%40example.com&session%5Bpassword%5D=password]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-03-31 15:31:32) [POST]
+  Parameters: {"session"=>{"email"=>"user4@example.com", "password"=>"[FILTERED]"}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=user4%40example.com&session%5Bpassword%5D=password]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-03-31 15:31:32) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-03-31 15:31:32) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-31 15:31:52) [POST]
+  Parameters: {"user"=>{"name"=>"New User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;36;1mUser Create (0.5ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('New User', 'user@example.com', '2010-03-31 20:31:53', '2010-03-31 20:31:53', 'c9cc52543ad085c3b9513cce165932702b60b4a32ef6101af6a21387716e8202', '9c76a2a9a98ecc790c4d346aa23e1565138fca844f108704ba586b43fc122d8d', 'd8156bae0c4243d3742fc4e9774d8aceabe0410249d720c855f98afc88ff846c')[0m
+Redirected to http://test.host/users/1
+Completed in 261ms (DB: 1) | 302 Found [http://test.host/users?user%5Bemail%5D=user%40example.com&user%5Bname%5D=New+User&user%5Bpassword%5D=foobar&user%5Bpassword_confirmation%5D=foobar]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-31 15:31:53) [POST]
+  Parameters: {"user"=>{"name"=>"New User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('New User', 'user@example.com', '2010-03-31 20:31:53', '2010-03-31 20:31:53', 'c9cc52543ad085c3b9513cce165932702b60b4a32ef6101af6a21387716e8202', '9c76a2a9a98ecc790c4d346aa23e1565138fca844f108704ba586b43fc122d8d', NULL)[0m
+  [4;35;1mUser Update (0.1ms)[0m   [0mUPDATE "users" SET "remember_token" = '051efede6703c350b194f6bcdc3fd932842c4c5ec17468c87c78920088539398', "updated_at" = '2010-03-31 20:31:53' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/users?user%5Bemail%5D=user%40example.com&user%5Bname%5D=New+User&user%5Bpassword%5D=foobar&user%5Bpassword_confirmation%5D=foobar]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-31 15:31:53) [POST]
+  Parameters: {"user"=>{"name"=>"New User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('New User', 'user@example.com', '2010-03-31 20:31:53', '2010-03-31 20:31:53', 'c9cc52543ad085c3b9513cce165932702b60b4a32ef6101af6a21387716e8202', '9c76a2a9a98ecc790c4d346aa23e1565138fca844f108704ba586b43fc122d8d', NULL)[0m
+  [4;36;1mUser Update (0.1ms)[0m   [0;1mUPDATE "users" SET "remember_token" = '051efede6703c350b194f6bcdc3fd932842c4c5ec17468c87c78920088539398', "updated_at" = '2010-03-31 20:31:53' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/users?user%5Bemail%5D=user%40example.com&user%5Bname%5D=New+User&user%5Bpassword%5D=foobar&user%5Bpassword_confirmation%5D=foobar]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-31 15:31:53) [POST]
+  Parameters: {"user"=>{"name"=>"New User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('New User', 'user@example.com', '2010-03-31 20:31:53', '2010-03-31 20:31:53', 'c9cc52543ad085c3b9513cce165932702b60b4a32ef6101af6a21387716e8202', '9c76a2a9a98ecc790c4d346aa23e1565138fca844f108704ba586b43fc122d8d', NULL)[0m
+  [4;35;1mUser Update (0.1ms)[0m   [0mUPDATE "users" SET "remember_token" = '051efede6703c350b194f6bcdc3fd932842c4c5ec17468c87c78920088539398', "updated_at" = '2010-03-31 20:31:53' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/users?user%5Bemail%5D=user%40example.com&user%5Bname%5D=New+User&user%5Bpassword%5D=foobar&user%5Bpassword_confirmation%5D=foobar]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-31 15:31:53) [POST]
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.2ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 40ms (View: 39, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-31 15:31:53) [POST]
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 56ms (View: 54, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-31 15:31:53) [POST]
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 16ms (View: 15, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 20:31:53', '2010-03-31 20:31:53', 'c9cc52543ad085c3b9513cce165932702b60b4a32ef6101af6a21387716e8202', '9c76a2a9a98ecc790c4d346aa23e1565138fca844f108704ba586b43fc122d8d', NULL)[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-31 15:31:53) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-03-31 20:31:53", updated_at: "2010-03-31 20:31:53", encrypted_password: "c9cc52543ad085c3b9513cce165932702b60b4a32ef6101af6a...", salt: "9c76a2a9a98ecc790c4d346aa23e1565138fca844f108704ba5...", remember_token: nil>, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 4, DB: 1) | 200 OK [http://test.host/users/1]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 20:31:53', '2010-03-31 20:31:53', 'c9cc52543ad085c3b9513cce165932702b60b4a32ef6101af6a21387716e8202', '9c76a2a9a98ecc790c4d346aa23e1565138fca844f108704ba586b43fc122d8d', NULL)[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-31 15:31:53) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-03-31 20:31:53", updated_at: "2010-03-31 20:31:53", encrypted_password: "c9cc52543ad085c3b9513cce165932702b60b4a32ef6101af6a...", salt: "9c76a2a9a98ecc790c4d346aa23e1565138fca844f108704ba5...", remember_token: nil>, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 3ms (View: 3, DB: 1) | 200 OK [http://test.host/users/1]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 20:31:53', '2010-03-31 20:31:53', 'c9cc52543ad085c3b9513cce165932702b60b4a32ef6101af6a21387716e8202', '9c76a2a9a98ecc790c4d346aa23e1565138fca844f108704ba586b43fc122d8d', NULL)[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-31 15:31:53) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-03-31 20:31:53", updated_at: "2010-03-31 20:31:53", encrypted_password: "c9cc52543ad085c3b9513cce165932702b60b4a32ef6101af6a...", salt: "9c76a2a9a98ecc790c4d346aa23e1565138fca844f108704ba5...", remember_token: nil>, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 45ms (View: 44, DB: 1) | 200 OK [http://test.host/users/1]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 20:31:53', '2010-03-31 20:31:53', 'c9cc52543ad085c3b9513cce165932702b60b4a32ef6101af6a21387716e8202', '9c76a2a9a98ecc790c4d346aa23e1565138fca844f108704ba586b43fc122d8d', NULL)[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-31 15:31:53) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-03-31 20:31:53", updated_at: "2010-03-31 20:31:53", encrypted_password: "c9cc52543ad085c3b9513cce165932702b60b4a32ef6101af6a...", salt: "9c76a2a9a98ecc790c4d346aa23e1565138fca844f108704ba5...", remember_token: nil>, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 1) | 200 OK [http://test.host/users/1]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-03-31 15:31:53) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-03-31 15:31:53) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-31 15:32:16) [POST]
+  Parameters: {"user"=>{"name"=>"New User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+Redirected to http://test.host/users
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/users?user%5Bemail%5D=user%40example.com&user%5Bname%5D=New+User&user%5Bpassword%5D=foobar&user%5Bpassword_confirmation%5D=foobar]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-31 15:32:16) [POST]
+  Parameters: {"user"=>{"name"=>"New User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('New User', 'user@example.com', '2010-03-31 20:32:16', '2010-03-31 20:32:16', '48a8a11466009919f10ab147ae4858dffe2d7b4e219963da01f887c7c8b4f438', 'a4e57ba496c8244aa7e9d4c6f123ab46eabb4dc7856f7345c33f6c66a35eb4ab', NULL)[0m
+Redirected to http://test.host/users/1
+Completed in 69ms (DB: 1) | 302 Found [http://test.host/users?user%5Bemail%5D=user%40example.com&user%5Bname%5D=New+User&user%5Bpassword%5D=foobar&user%5Bpassword_confirmation%5D=foobar]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-31 15:32:16) [POST]
+  Parameters: {"user"=>{"name"=>"New User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('New User', 'user@example.com', '2010-03-31 20:32:16', '2010-03-31 20:32:16', '48a8a11466009919f10ab147ae4858dffe2d7b4e219963da01f887c7c8b4f438', 'a4e57ba496c8244aa7e9d4c6f123ab46eabb4dc7856f7345c33f6c66a35eb4ab', NULL)[0m
+Redirected to http://test.host/users/1
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/users?user%5Bemail%5D=user%40example.com&user%5Bname%5D=New+User&user%5Bpassword%5D=foobar&user%5Bpassword_confirmation%5D=foobar]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-31 15:32:16) [POST]
+  Parameters: {"user"=>{"name"=>"New User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('New User', 'user@example.com', '2010-03-31 20:32:16', '2010-03-31 20:32:16', '48a8a11466009919f10ab147ae4858dffe2d7b4e219963da01f887c7c8b4f438', 'a4e57ba496c8244aa7e9d4c6f123ab46eabb4dc7856f7345c33f6c66a35eb4ab', NULL)[0m
+Redirected to http://test.host/users/1
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/users?user%5Bemail%5D=user%40example.com&user%5Bname%5D=New+User&user%5Bpassword%5D=foobar&user%5Bpassword_confirmation%5D=foobar]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-31 15:32:16) [POST]
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.2ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 38ms (View: 38, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-31 15:32:16) [POST]
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 54ms (View: 52, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-31 15:32:16) [POST]
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 17ms (View: 15, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 20:32:16', '2010-03-31 20:32:16', '48a8a11466009919f10ab147ae4858dffe2d7b4e219963da01f887c7c8b4f438', 'a4e57ba496c8244aa7e9d4c6f123ab46eabb4dc7856f7345c33f6c66a35eb4ab', NULL)[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-31 15:32:16) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-03-31 20:32:16", updated_at: "2010-03-31 20:32:16", encrypted_password: "48a8a11466009919f10ab147ae4858dffe2d7b4e219963da01f...", salt: "a4e57ba496c8244aa7e9d4c6f123ab46eabb4dc7856f7345c33...", remember_token: nil>, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 4, DB: 1) | 200 OK [http://test.host/users/1]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 20:32:16', '2010-03-31 20:32:16', '48a8a11466009919f10ab147ae4858dffe2d7b4e219963da01f887c7c8b4f438', 'a4e57ba496c8244aa7e9d4c6f123ab46eabb4dc7856f7345c33f6c66a35eb4ab', NULL)[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-31 15:32:16) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-03-31 20:32:16", updated_at: "2010-03-31 20:32:16", encrypted_password: "48a8a11466009919f10ab147ae4858dffe2d7b4e219963da01f...", salt: "a4e57ba496c8244aa7e9d4c6f123ab46eabb4dc7856f7345c33...", remember_token: nil>, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (39.8ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 43ms (View: 43, DB: 1) | 200 OK [http://test.host/users/1]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 20:32:16', '2010-03-31 20:32:16', '48a8a11466009919f10ab147ae4858dffe2d7b4e219963da01f887c7c8b4f438', 'a4e57ba496c8244aa7e9d4c6f123ab46eabb4dc7856f7345c33f6c66a35eb4ab', NULL)[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-31 15:32:16) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-03-31 20:32:16", updated_at: "2010-03-31 20:32:16", encrypted_password: "48a8a11466009919f10ab147ae4858dffe2d7b4e219963da01f...", salt: "a4e57ba496c8244aa7e9d4c6f123ab46eabb4dc7856f7345c33...", remember_token: nil>, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 1) | 200 OK [http://test.host/users/1]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 20:32:16', '2010-03-31 20:32:16', '48a8a11466009919f10ab147ae4858dffe2d7b4e219963da01f887c7c8b4f438', 'a4e57ba496c8244aa7e9d4c6f123ab46eabb4dc7856f7345c33f6c66a35eb4ab', NULL)[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-31 15:32:16) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-03-31 20:32:16", updated_at: "2010-03-31 20:32:16", encrypted_password: "48a8a11466009919f10ab147ae4858dffe2d7b4e219963da01f...", salt: "a4e57ba496c8244aa7e9d4c6f123ab46eabb4dc7856f7345c33...", remember_token: nil>, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 1) | 200 OK [http://test.host/users/1]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-03-31 15:32:16) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-03-31 15:32:16) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-31 16:08:14) [POST]
+  Parameters: {"user"=>{"name"=>"New User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;36;1mUser Create (0.5ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('New User', 'user@example.com', '2010-03-31 21:08:14', '2010-03-31 21:08:14', '4062bfa2f5060b1fae9b9d2e4d860c0b58ded5c1e0f08cbd8ee6b88df006c64b', '5b071042c0534d01ebfe518a5d8630eebf40b7d063da74a1f3dbd3b7c71f4219', 'd8156bae0c4243d3742fc4e9774d8aceabe0410249d720c855f98afc88ff846c')[0m
+Redirected to http://test.host/users/1
+Completed in 280ms (DB: 1) | 302 Found [http://test.host/users?user%5Bemail%5D=user%40example.com&user%5Bname%5D=New+User&user%5Bpassword%5D=foobar&user%5Bpassword_confirmation%5D=foobar]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-31 16:08:14) [POST]
+  Parameters: {"user"=>{"name"=>"New User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('New User', 'user@example.com', '2010-03-31 21:08:14', '2010-03-31 21:08:14', '4062bfa2f5060b1fae9b9d2e4d860c0b58ded5c1e0f08cbd8ee6b88df006c64b', '5b071042c0534d01ebfe518a5d8630eebf40b7d063da74a1f3dbd3b7c71f4219', NULL)[0m
+  [4;35;1mUser Update (0.1ms)[0m   [0mUPDATE "users" SET "remember_token" = '881e5ff5f761cbb83d7ea8dd768cc839de9a4faa539ee4a840d0857100cb9fd0', "updated_at" = '2010-03-31 21:08:14' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 7ms (DB: 1) | 302 Found [http://test.host/users?user%5Bemail%5D=user%40example.com&user%5Bname%5D=New+User&user%5Bpassword%5D=foobar&user%5Bpassword_confirmation%5D=foobar]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-31 16:08:14) [POST]
+  Parameters: {"user"=>{"name"=>"New User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('New User', 'user@example.com', '2010-03-31 21:08:14', '2010-03-31 21:08:14', '4062bfa2f5060b1fae9b9d2e4d860c0b58ded5c1e0f08cbd8ee6b88df006c64b', '5b071042c0534d01ebfe518a5d8630eebf40b7d063da74a1f3dbd3b7c71f4219', NULL)[0m
+  [4;36;1mUser Update (0.1ms)[0m   [0;1mUPDATE "users" SET "remember_token" = '881e5ff5f761cbb83d7ea8dd768cc839de9a4faa539ee4a840d0857100cb9fd0', "updated_at" = '2010-03-31 21:08:14' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 5ms (DB: 1) | 302 Found [http://test.host/users?user%5Bemail%5D=user%40example.com&user%5Bname%5D=New+User&user%5Bpassword%5D=foobar&user%5Bpassword_confirmation%5D=foobar]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-31 16:08:14) [POST]
+  Parameters: {"user"=>{"name"=>"New User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('New User', 'user@example.com', '2010-03-31 21:08:14', '2010-03-31 21:08:14', '4062bfa2f5060b1fae9b9d2e4d860c0b58ded5c1e0f08cbd8ee6b88df006c64b', '5b071042c0534d01ebfe518a5d8630eebf40b7d063da74a1f3dbd3b7c71f4219', NULL)[0m
+  [4;35;1mUser Update (0.1ms)[0m   [0mUPDATE "users" SET "remember_token" = '881e5ff5f761cbb83d7ea8dd768cc839de9a4faa539ee4a840d0857100cb9fd0', "updated_at" = '2010-03-31 21:08:14' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/users?user%5Bemail%5D=user%40example.com&user%5Bname%5D=New+User&user%5Bpassword%5D=foobar&user%5Bpassword_confirmation%5D=foobar]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-31 16:08:14) [POST]
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.2ms)
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-31 16:08:14) [POST]
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.5ms)
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-31 16:08:14) [POST]
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 21:08:14', '2010-03-31 21:08:14', '4062bfa2f5060b1fae9b9d2e4d860c0b58ded5c1e0f08cbd8ee6b88df006c64b', '5b071042c0534d01ebfe518a5d8630eebf40b7d063da74a1f3dbd3b7c71f4219', NULL)[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-31 16:08:14) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-03-31 21:08:14", updated_at: "2010-03-31 21:08:14", encrypted_password: "4062bfa2f5060b1fae9b9d2e4d860c0b58ded5c1e0f08cbd8ee...", salt: "5b071042c0534d01ebfe518a5d8630eebf40b7d063da74a1f3d...", remember_token: nil>, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.6ms)
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 21:08:14', '2010-03-31 21:08:14', '4062bfa2f5060b1fae9b9d2e4d860c0b58ded5c1e0f08cbd8ee6b88df006c64b', '5b071042c0534d01ebfe518a5d8630eebf40b7d063da74a1f3dbd3b7c71f4219', NULL)[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-31 16:08:14) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-03-31 21:08:14", updated_at: "2010-03-31 21:08:14", encrypted_password: "4062bfa2f5060b1fae9b9d2e4d860c0b58ded5c1e0f08cbd8ee...", salt: "5b071042c0534d01ebfe518a5d8630eebf40b7d063da74a1f3d...", remember_token: nil>, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.6ms)
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 21:08:14', '2010-03-31 21:08:14', '4062bfa2f5060b1fae9b9d2e4d860c0b58ded5c1e0f08cbd8ee6b88df006c64b', '5b071042c0534d01ebfe518a5d8630eebf40b7d063da74a1f3dbd3b7c71f4219', NULL)[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-31 16:08:14) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-03-31 21:08:14", updated_at: "2010-03-31 21:08:14", encrypted_password: "4062bfa2f5060b1fae9b9d2e4d860c0b58ded5c1e0f08cbd8ee...", salt: "5b071042c0534d01ebfe518a5d8630eebf40b7d063da74a1f3d...", remember_token: nil>, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.6ms)
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 21:08:14', '2010-03-31 21:08:14', '4062bfa2f5060b1fae9b9d2e4d860c0b58ded5c1e0f08cbd8ee6b88df006c64b', '5b071042c0534d01ebfe518a5d8630eebf40b7d063da74a1f3dbd3b7c71f4219', NULL)[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-31 16:08:14) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-03-31 21:08:14", updated_at: "2010-03-31 21:08:14", encrypted_password: "4062bfa2f5060b1fae9b9d2e4d860c0b58ded5c1e0f08cbd8ee...", salt: "5b071042c0534d01ebfe518a5d8630eebf40b7d063da74a1f3d...", remember_token: nil>, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.6ms)
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-03-31 16:08:15) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.5ms)
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-03-31 16:08:15) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.5ms)
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-31 16:12:45) [POST]
+  Parameters: {"user"=>{"name"=>"New User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;36;1mUser Create (0.6ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('New User', 'user@example.com', '2010-03-31 21:12:45', '2010-03-31 21:12:45', '0d5bf5242a7213ba40cd951a4da1ab3382dff0d208c691147499f1a20f90c097', '63e0a7bf434b711b29980ceceeee1291bed4f838d58322f4499a451468f18c4c', 'd8156bae0c4243d3742fc4e9774d8aceabe0410249d720c855f98afc88ff846c')[0m
+Redirected to http://test.host/users/1
+Completed in 262ms (DB: 1) | 302 Found [http://test.host/users?user%5Bemail%5D=user%40example.com&user%5Bname%5D=New+User&user%5Bpassword%5D=foobar&user%5Bpassword_confirmation%5D=foobar]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-31 16:12:45) [POST]
+  Parameters: {"user"=>{"name"=>"New User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('New User', 'user@example.com', '2010-03-31 21:12:45', '2010-03-31 21:12:45', '0d5bf5242a7213ba40cd951a4da1ab3382dff0d208c691147499f1a20f90c097', '63e0a7bf434b711b29980ceceeee1291bed4f838d58322f4499a451468f18c4c', NULL)[0m
+  [4;35;1mUser Update (0.1ms)[0m   [0mUPDATE "users" SET "remember_token" = '579cf5db056cb5a5cd482e7501740fc075763f72162719114c4c936481e40795', "updated_at" = '2010-03-31 21:12:45' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/users?user%5Bemail%5D=user%40example.com&user%5Bname%5D=New+User&user%5Bpassword%5D=foobar&user%5Bpassword_confirmation%5D=foobar]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-31 16:12:45) [POST]
+  Parameters: {"user"=>{"name"=>"New User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('New User', 'user@example.com', '2010-03-31 21:12:45', '2010-03-31 21:12:45', '0d5bf5242a7213ba40cd951a4da1ab3382dff0d208c691147499f1a20f90c097', '63e0a7bf434b711b29980ceceeee1291bed4f838d58322f4499a451468f18c4c', NULL)[0m
+  [4;36;1mUser Update (0.1ms)[0m   [0;1mUPDATE "users" SET "remember_token" = '579cf5db056cb5a5cd482e7501740fc075763f72162719114c4c936481e40795', "updated_at" = '2010-03-31 21:12:45' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/users?user%5Bemail%5D=user%40example.com&user%5Bname%5D=New+User&user%5Bpassword%5D=foobar&user%5Bpassword_confirmation%5D=foobar]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-31 16:12:45) [POST]
+  Parameters: {"user"=>{"name"=>"New User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('New User', 'user@example.com', '2010-03-31 21:12:45', '2010-03-31 21:12:45', '0d5bf5242a7213ba40cd951a4da1ab3382dff0d208c691147499f1a20f90c097', '63e0a7bf434b711b29980ceceeee1291bed4f838d58322f4499a451468f18c4c', NULL)[0m
+  [4;35;1mUser Update (0.1ms)[0m   [0mUPDATE "users" SET "remember_token" = '579cf5db056cb5a5cd482e7501740fc075763f72162719114c4c936481e40795', "updated_at" = '2010-03-31 21:12:45' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/users?user%5Bemail%5D=user%40example.com&user%5Bname%5D=New+User&user%5Bpassword%5D=foobar&user%5Bpassword_confirmation%5D=foobar]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-31 16:12:45) [POST]
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.2ms)
+Rendered layouts/_header (1.2ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 39ms (View: 39, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-31 16:12:45) [POST]
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 55ms (View: 53, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-31 16:12:45) [POST]
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 17ms (View: 15, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 21:12:45', '2010-03-31 21:12:45', '0d5bf5242a7213ba40cd951a4da1ab3382dff0d208c691147499f1a20f90c097', '63e0a7bf434b711b29980ceceeee1291bed4f838d58322f4499a451468f18c4c', NULL)[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-31 16:12:45) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-03-31 21:12:45", updated_at: "2010-03-31 21:12:45", encrypted_password: "0d5bf5242a7213ba40cd951a4da1ab3382dff0d208c69114749...", salt: "63e0a7bf434b711b29980ceceeee1291bed4f838d58322f4499...", remember_token: nil>, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 4, DB: 1) | 200 OK [http://test.host/users/1]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.7ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 21:12:45', '2010-03-31 21:12:45', '0d5bf5242a7213ba40cd951a4da1ab3382dff0d208c691147499f1a20f90c097', '63e0a7bf434b711b29980ceceeee1291bed4f838d58322f4499a451468f18c4c', NULL)[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-31 16:12:45) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-03-31 21:12:45", updated_at: "2010-03-31 21:12:45", encrypted_password: "0d5bf5242a7213ba40cd951a4da1ab3382dff0d208c69114749...", salt: "63e0a7bf434b711b29980ceceeee1291bed4f838d58322f4499...", remember_token: nil>, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://test.host/users/1]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 21:12:45', '2010-03-31 21:12:45', '0d5bf5242a7213ba40cd951a4da1ab3382dff0d208c691147499f1a20f90c097', '63e0a7bf434b711b29980ceceeee1291bed4f838d58322f4499a451468f18c4c', NULL)[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-31 16:12:45) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-03-31 21:12:45", updated_at: "2010-03-31 21:12:45", encrypted_password: "0d5bf5242a7213ba40cd951a4da1ab3382dff0d208c69114749...", salt: "63e0a7bf434b711b29980ceceeee1291bed4f838d58322f4499...", remember_token: nil>, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.5ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 44ms (View: 44, DB: 1) | 200 OK [http://test.host/users/1]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 21:12:45', '2010-03-31 21:12:45', '0d5bf5242a7213ba40cd951a4da1ab3382dff0d208c691147499f1a20f90c097', '63e0a7bf434b711b29980ceceeee1291bed4f838d58322f4499a451468f18c4c', NULL)[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-31 16:12:45) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-03-31 21:12:45", updated_at: "2010-03-31 21:12:45", encrypted_password: "0d5bf5242a7213ba40cd951a4da1ab3382dff0d208c69114749...", salt: "63e0a7bf434b711b29980ceceeee1291bed4f838d58322f4499...", remember_token: nil>, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 1) | 200 OK [http://test.host/users/1]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-03-31 16:12:45) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-03-31 16:12:45) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 21:16:21', '2010-03-31 21:16:21', '730f8d5dfd106e5e259b3ee367e354a98315c15cea02482cd100d9aeff94dfe1', '033145912c3af3014120741a4d98c9b6459c4c2440ccbc4d6c695727ac89486b', NULL)[0m
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-03-31 16:16:21) [GET]
+  Parameters: {"controller"=>"sessions", "action"=>"new"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (1.2ms)
+Rendered layouts/_header (1.2ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 100ms (View: 98, DB: 1) | 200 OK [http://www.example.com/signin]
+REQUESTING PAGE: POST /sessions with {"session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-03-31 16:16:21) [POST]
+  Parameters: {"session"=>{"email"=>"mhartl@example.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in", "controller"=>"sessions", "action"=>"create"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Update (0.1ms)[0m   [0mUPDATE "users" SET "remember_token" = 'ed3e5c387009617e2b82ea90bd07a11a1e7f9ec60771c45119d2173b5c9e0c28', "updated_at" = '2010-03-31 21:16:21' WHERE "id" = 1[0m
+Redirected to http://www.example.com/users/1
+Completed in 313ms (DB: 0) | 302 Found [http://www.example.com/sessions]
+REQUESTING PAGE: GET http://www.example.com/users/1 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-03-31 16:16:22) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.5ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ed3e5c387009617e2b82ea90bd07a11a1e7f9ec60771c45119d2173b5c9e0c28') LIMIT 1[0m
+Rendered layouts/_header (1.6ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 8ms (View: 5, DB: 1) | 200 OK [http://www.example.com/users/1]
+REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/1"}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-03-31 16:16:22) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ed3e5c387009617e2b82ea90bd07a11a1e7f9ec60771c45119d2173b5c9e0c28') LIMIT 1[0m
+Rendered layouts/_header (1.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://www.example.com/]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 21:16:22', '2010-03-31 21:16:22', '98220bc5e97f8029e88dd97498365fbf0e1edd5fc436d39d0552b71b198380ec', '4c06cd2e9b31ba2709dc43c5b73414538184bd2c39e631a73ca15c31abc60432', NULL)[0m
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-03-31 16:16:22) [GET]
+  Parameters: {"controller"=>"sessions", "action"=>"new"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 4, DB: 1) | 200 OK [http://www.example.com/signin]
+REQUESTING PAGE: POST /sessions with {"session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-03-31 16:16:22) [POST]
+  Parameters: {"session"=>{"email"=>"mhartl@example.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in", "controller"=>"sessions", "action"=>"create"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'mhartl@example.com') LIMIT 1[0m
+  [4;36;1mUser Update (0.1ms)[0m   [0;1mUPDATE "users" SET "remember_token" = '1683b4937bac0f844ca33caac24d23c9bbccfaeb70a4677a627e5fd770ec503f', "updated_at" = '2010-03-31 21:16:22' WHERE "id" = 1[0m
+Redirected to http://www.example.com/users/1
+Completed in 3ms (DB: 0) | 302 Found [http://www.example.com/sessions]
+REQUESTING PAGE: GET http://www.example.com/users/1 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-03-31 16:16:22) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.6ms)
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '1683b4937bac0f844ca33caac24d23c9bbccfaeb70a4677a627e5fd770ec503f') LIMIT 1[0m
+Rendered layouts/_header (1.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 5ms (View: 4, DB: 1) | 200 OK [http://www.example.com/users/1]
+REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/1"}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-03-31 16:16:22) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.7ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '1683b4937bac0f844ca33caac24d23c9bbccfaeb70a4677a627e5fd770ec503f') LIMIT 1[0m
+Rendered layouts/_header (1.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 6ms (View: 6, DB: 0) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-03-31 16:16:22) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-03-31 16:16:22) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-03-31 16:16:22) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"contact"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 49ms (View: 3, DB: 0) | 200 OK [http://www.example.com/contact]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-03-31 16:16:22) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"about"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/about]
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-03-31 16:16:22) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"help"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/help]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-03-31 16:16:22) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-03-31 16:16:22) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-03-31 16:16:22) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"about"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/about]
+REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-03-31 16:16:22) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"help"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/help]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-31 16:29:25) [POST]
+  Parameters: {"user"=>{"name"=>"New User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;36;1mUser Create (0.5ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('New User', 'user@example.com', '2010-03-31 21:29:25', '2010-03-31 21:29:25', 'd35f4ac59025dadc701b4031dcf1e8fcb6ca1266463d65ea46a01646d1ab83ae', '0e2ae30c1c3c43c8f0bb83f53a2bc6c449643510c264aa4ac4bb281608a319fd', 'd8156bae0c4243d3742fc4e9774d8aceabe0410249d720c855f98afc88ff846c')[0m
+Redirected to http://test.host/users/1
+Completed in 266ms (DB: 1) | 302 Found [http://test.host/users?user%5Bemail%5D=user%40example.com&user%5Bname%5D=New+User&user%5Bpassword%5D=foobar&user%5Bpassword_confirmation%5D=foobar]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-31 16:29:26) [POST]
+  Parameters: {"user"=>{"name"=>"New User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('New User', 'user@example.com', '2010-03-31 21:29:26', '2010-03-31 21:29:26', '407daacf19e820f1e1f3fe6e925b1ba578222a73d73f7e772bafc203a703d033', '4452125e49082d87906cdf61cfe1bb273045b6679a6d0c3cc6a6d4623179ff09', NULL)[0m
+  [4;35;1mUser Update (0.1ms)[0m   [0mUPDATE "users" SET "remember_token" = '8ca256f9847cf737bb7922482d9e078311d3e602c54bd93bff9355aedaf84b8f', "updated_at" = '2010-03-31 21:29:26' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/users?user%5Bemail%5D=user%40example.com&user%5Bname%5D=New+User&user%5Bpassword%5D=foobar&user%5Bpassword_confirmation%5D=foobar]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-31 16:29:26) [POST]
+  Parameters: {"user"=>{"name"=>"New User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('New User', 'user@example.com', '2010-03-31 21:29:26', '2010-03-31 21:29:26', '407daacf19e820f1e1f3fe6e925b1ba578222a73d73f7e772bafc203a703d033', '4452125e49082d87906cdf61cfe1bb273045b6679a6d0c3cc6a6d4623179ff09', NULL)[0m
+  [4;36;1mUser Update (0.1ms)[0m   [0;1mUPDATE "users" SET "remember_token" = '8ca256f9847cf737bb7922482d9e078311d3e602c54bd93bff9355aedaf84b8f', "updated_at" = '2010-03-31 21:29:26' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/users?user%5Bemail%5D=user%40example.com&user%5Bname%5D=New+User&user%5Bpassword%5D=foobar&user%5Bpassword_confirmation%5D=foobar]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-31 16:29:26) [POST]
+  Parameters: {"user"=>{"name"=>"New User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('New User', 'user@example.com', '2010-03-31 21:29:26', '2010-03-31 21:29:26', '407daacf19e820f1e1f3fe6e925b1ba578222a73d73f7e772bafc203a703d033', '4452125e49082d87906cdf61cfe1bb273045b6679a6d0c3cc6a6d4623179ff09', NULL)[0m
+  [4;35;1mUser Update (0.1ms)[0m   [0mUPDATE "users" SET "remember_token" = '8ca256f9847cf737bb7922482d9e078311d3e602c54bd93bff9355aedaf84b8f', "updated_at" = '2010-03-31 21:29:26' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/users?user%5Bemail%5D=user%40example.com&user%5Bname%5D=New+User&user%5Bpassword%5D=foobar&user%5Bpassword_confirmation%5D=foobar]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-31 16:29:26) [POST]
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.2ms)
+Rendered layouts/_header (1.3ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 41ms (View: 40, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-31 16:29:26) [POST]
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 60ms (View: 57, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-31 16:29:26) [POST]
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 17ms (View: 15, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 21:29:26', '2010-03-31 21:29:26', '407daacf19e820f1e1f3fe6e925b1ba578222a73d73f7e772bafc203a703d033', '4452125e49082d87906cdf61cfe1bb273045b6679a6d0c3cc6a6d4623179ff09', NULL)[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-31 16:29:26) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-03-31 21:29:26", updated_at: "2010-03-31 21:29:26", encrypted_password: "407daacf19e820f1e1f3fe6e925b1ba578222a73d73f7e772ba...", salt: "4452125e49082d87906cdf61cfe1bb273045b6679a6d0c3cc6a...", remember_token: nil>, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 4, DB: 1) | 200 OK [http://test.host/users/1]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.9ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 21:29:26', '2010-03-31 21:29:26', '407daacf19e820f1e1f3fe6e925b1ba578222a73d73f7e772bafc203a703d033', '4452125e49082d87906cdf61cfe1bb273045b6679a6d0c3cc6a6d4623179ff09', NULL)[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-31 16:29:26) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-03-31 21:29:26", updated_at: "2010-03-31 21:29:26", encrypted_password: "407daacf19e820f1e1f3fe6e925b1ba578222a73d73f7e772ba...", salt: "4452125e49082d87906cdf61cfe1bb273045b6679a6d0c3cc6a...", remember_token: nil>, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 1) | 200 OK [http://test.host/users/1]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 21:29:26', '2010-03-31 21:29:26', '407daacf19e820f1e1f3fe6e925b1ba578222a73d73f7e772bafc203a703d033', '4452125e49082d87906cdf61cfe1bb273045b6679a6d0c3cc6a6d4623179ff09', NULL)[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-31 16:29:26) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-03-31 21:29:26", updated_at: "2010-03-31 21:29:26", encrypted_password: "407daacf19e820f1e1f3fe6e925b1ba578222a73d73f7e772ba...", salt: "4452125e49082d87906cdf61cfe1bb273045b6679a6d0c3cc6a...", remember_token: nil>, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.5ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 44ms (View: 44, DB: 1) | 200 OK [http://test.host/users/1]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 21:29:26', '2010-03-31 21:29:26', '407daacf19e820f1e1f3fe6e925b1ba578222a73d73f7e772bafc203a703d033', '4452125e49082d87906cdf61cfe1bb273045b6679a6d0c3cc6a6d4623179ff09', NULL)[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-31 16:29:26) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-03-31 21:29:26", updated_at: "2010-03-31 21:29:26", encrypted_password: "407daacf19e820f1e1f3fe6e925b1ba578222a73d73f7e772ba...", salt: "4452125e49082d87906cdf61cfe1bb273045b6679a6d0c3cc6a...", remember_token: nil>, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 1) | 200 OK [http://test.host/users/1]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-03-31 16:29:26) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-03-31 16:29:26) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.6ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 21:29:42', '2010-03-31 21:29:42', '1ce7a893263fce90496014632731ed9358f0f9df8d417c2079746f293966fe02', 'd1244c230b892f0f5dd3315f45a5a509b5199e851b92c0bc01269d5b52451ad5', NULL)[0m
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-03-31 16:29:42) [GET]
+  Parameters: {"controller"=>"sessions", "action"=>"new"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (1.1ms)
+Rendered layouts/_header (1.3ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 100ms (View: 98, DB: 1) | 200 OK [http://www.example.com/signin]
+REQUESTING PAGE: POST /sessions with {"session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-03-31 16:29:42) [POST]
+  Parameters: {"session"=>{"email"=>"mhartl@example.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in", "controller"=>"sessions", "action"=>"create"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Update (0.1ms)[0m   [0mUPDATE "users" SET "remember_token" = '2360c7a9aa7005dd4c6207a576d963eb9bf8a5248e478407d4cfa0ed0be8032b', "updated_at" = '2010-03-31 21:29:42' WHERE "id" = 1[0m
+Redirected to http://www.example.com/users/1
+Completed in 229ms (DB: 0) | 302 Found [http://www.example.com/sessions]
+REQUESTING PAGE: GET http://www.example.com/users/1 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-03-31 16:29:42) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.5ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '2360c7a9aa7005dd4c6207a576d963eb9bf8a5248e478407d4cfa0ed0be8032b') LIMIT 1[0m
+Rendered layouts/_header (1.9ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 8ms (View: 5, DB: 1) | 200 OK [http://www.example.com/users/1]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '2360c7a9aa7005dd4c6207a576d963eb9bf8a5248e478407d4cfa0ed0be8032b') LIMIT 1[0m
+REQUESTING PAGE: DELETE /signout with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/1"}
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-03-31 16:29:42) [DELETE]
+  Parameters: {"controller"=>"sessions", "action"=>"destroy"}
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 0) | 302 Found [http://www.example.com/signout]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/signout"}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-03-31 16:29:42) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '') LIMIT 1[0m
+Rendered layouts/_header (1.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://www.example.com/]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '') LIMIT 1[0m
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-03-31 16:29:42) [GET]
+  Parameters: {"controller"=>"sessions", "action"=>"new"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/signin]
+REQUESTING PAGE: POST /sessions with {"session"=>{"email"=>"", "password"=>""}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-03-31 16:29:42) [POST]
+  Parameters: {"session"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in", "controller"=>"sessions", "action"=>"create"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://www.example.com/sessions]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 21:29:42', '2010-03-31 21:29:42', '1ce7a893263fce90496014632731ed9358f0f9df8d417c2079746f293966fe02', 'd1244c230b892f0f5dd3315f45a5a509b5199e851b92c0bc01269d5b52451ad5', NULL)[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 21:29:42', '2010-03-31 21:29:42', '1ce7a893263fce90496014632731ed9358f0f9df8d417c2079746f293966fe02', 'd1244c230b892f0f5dd3315f45a5a509b5199e851b92c0bc01269d5b52451ad5', NULL)[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Michael Hartl', 'mhartl@example.com', '2010-03-31 21:29:42', '2010-03-31 21:29:42', '1ce7a893263fce90496014632731ed9358f0f9df8d417c2079746f293966fe02', 'd1244c230b892f0f5dd3315f45a5a509b5199e851b92c0bc01269d5b52451ad5', NULL)[0m
+  [4;35;1mUser Update (0.1ms)[0m   [0mUPDATE "users" SET "remember_token" = '2360c7a9aa7005dd4c6207a576d963eb9bf8a5248e478407d4cfa0ed0be8032b', "updated_at" = '2010-03-31 21:29:42' WHERE "id" = 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+REQUESTING PAGE: GET http://www.example.com/signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-03-31 16:29:42) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 4, DB: 2) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"user"=>{"name"=>"Example User", "email"=>"user4@example.com", "password"=>"foobar", "password_confirmation"=>"foobar"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-03-31 16:29:42) [POST]
+  Parameters: {"user"=>{"name"=>"Example User", "email"=>"user4@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up", "controller"=>"users", "action"=>"create"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user4@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "remember_token") VALUES('Example User', 'user4@example.com', '2010-03-31 21:29:42', '2010-03-31 21:29:42', '1ce7a893263fce90496014632731ed9358f0f9df8d417c2079746f293966fe02', 'd1244c230b892f0f5dd3315f45a5a509b5199e851b92c0bc01269d5b52451ad5', NULL)[0m
+  [4;35;1mUser Update (0.1ms)[0m   [0mUPDATE "users" SET "remember_token" = '2360c7a9aa7005dd4c6207a576d963eb9bf8a5248e478407d4cfa0ed0be8032b', "updated_at" = '2010-03-31 21:29:42' WHERE "id" = 1[0m
+Redirected to http://www.example.com/users/1
+Completed in 5ms (DB: 1) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/1 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-03-31 16:29:42) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.6ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '2360c7a9aa7005dd4c6207a576d963eb9bf8a5248e478407d4cfa0ed0be8032b') LIMIT 1[0m
+Rendered layouts/_header (1.6ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 6ms (View: 5, DB: 1) | 200 OK [http://www.example.com/users/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+REQUESTING PAGE: GET http://www.example.com/signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-03-31 16:29:42) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-03-31 16:29:43) [POST]
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up", "controller"=>"users", "action"=>"create"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 17ms (View: 16, DB: 0) | 200 OK [http://www.example.com/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
