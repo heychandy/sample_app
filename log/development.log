@@ -1,0 +1,532 @@
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime, "encrypted_password" varchar(255), "salt" varchar(255)) [0m
+  [4;35;1mSQL (1.1ms)[0m   [0mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100329192815')[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100327022230')[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100329152317')[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100329175408')[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-03-29 21:13:57) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.4ms)
+Rendered layouts/_header (1.2ms)
+Rendered layouts/_footer (0.8ms)
+Completed in 163ms (View: 153, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-03-29 21:14:28) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 52ms (View: 51, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-03-29 21:14:32) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 16ms (View: 7, DB: 0) | 200 OK [http://localhost/signup]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-03-29 21:15:10) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 16ms (View: 7, DB: 0) | 200 OK [http://localhost/signup]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-03-29 21:15:42) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 16ms (View: 7, DB: 0) | 200 OK [http://localhost/signup]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-03-30 14:11:44) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.4ms)
+Rendered layouts/_header (1.2ms)
+Rendered layouts/_footer (0.8ms)
+Completed in 160ms (View: 149, DB: 0) | 200 OK [http://localhost/signup]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-03-30 15:18:22) [POST]
+  Parameters: {"authenticity_token"=>"OFfprYYl3rJgIiMaB+w5QovvX/v02IoWMB496TBByds=", "user"=>{"email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign up"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 28ms (View: 15, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-03-30 15:25:54) [POST]
+  Parameters: {"authenticity_token"=>"OFfprYYl3rJgIiMaB+w5QovvX/v02IoWMB496TBByds=", "user"=>{"email"=>"1", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign up"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 26ms (View: 14, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-03-30 15:26:07) [POST]
+  Parameters: {"authenticity_token"=>"OFfprYYl3rJgIiMaB+w5QovvX/v02IoWMB496TBByds=", "user"=>{"email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign up"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 27ms (View: 14, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-03-30 15:52:27) [POST]
+  Parameters: {"authenticity_token"=>"OFfprYYl3rJgIiMaB+w5QovvX/v02IoWMB496TBByds=", "user"=>{"email"=>"1", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign up"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 26ms (View: 13, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-03-30 15:52:38) [POST]
+  Parameters: {"authenticity_token"=>"OFfprYYl3rJgIiMaB+w5QovvX/v02IoWMB496TBByds=", "user"=>{"email"=>"1", "password"=>"x", "password_confirmation"=>"x"}, "commit"=>"Sign up"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 24ms (View: 12, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-03-30 15:53:40) [POST]
+  Parameters: {"authenticity_token"=>"OFfprYYl3rJgIiMaB+w5QovvX/v02IoWMB496TBByds=", "user"=>{"email"=>"1", "password"=>"abc", "password_confirmation"=>"abc"}, "commit"=>"Sign up"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 64ms (View: 51, DB: 0) | 200 OK [http://localhost/users]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-03-30 15:57:59) [POST]
+  Parameters: {"authenticity_token"=>"OFfprYYl3rJgIiMaB+w5QovvX/v02IoWMB496TBByds=", "user"=>{"email"=>"1", "password"=>"abc", "password_confirmation"=>"abc"}, "commit"=>"Sign up"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 39ms (View: 24, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-03-30 15:59:30) [POST]
+  Parameters: {"authenticity_token"=>"OFfprYYl3rJgIiMaB+w5QovvX/v02IoWMB496TBByds=", "user"=>{"email"=>"1", "password"=>"abc", "password_confirmation"=>"abc"}, "commit"=>"Sign up"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+ERROR: compiling _run_erb_app47views47users47new46html46erb RAISED /Users/chandy/training/rails_projects/sample_app/app/views/users/new.html.erb:5: syntax error, unexpected tLABEL
+...; @output_buffer.concat(( user: @user.errors.full_messages )...
+...                               ^
+Function body:           def _run_erb_app47views47users47new46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h2>Sign up</h2>\n\n"
+
+;  form_for(@user) do |f| ; @output_buffer.concat "\n\t"
+; @output_buffer.concat(( f.error_messages ).to_s); @output_buffer.concat "\n\t"
+; @output_buffer.concat(( user: @user.errors.full_messages ).to_s); @output_buffer.concat "\n\t<div class=\"field\">\n\t\t"
+
+; @output_buffer.concat(( f.label :name).to_s); @output_buffer.concat "<br />\n"
+;  f.text_field :name; @output_buffer.concat "\n\t</div>\n\t<div class=\"field\">\n\t\t"
+
+
+; @output_buffer.concat(( f.label :email).to_s); @output_buffer.concat "<br />\n\t\t"
+; @output_buffer.concat(( f.text_field :email).to_s); @output_buffer.concat "\n\t</div>\n\t<div class=\"field\">\n\t\t"
+
+
+; @output_buffer.concat(( f.label :password).to_s); @output_buffer.concat "<br />\n\t\t"
+; @output_buffer.concat(( f.password_field :password).to_s); @output_buffer.concat "\n\t</div>\n\t<div class=\"field\">\n\t\t"
+
+
+; @output_buffer.concat(( f.label :password_confirmation, "Confirmation").to_s); @output_buffer.concat "<br />\n\t\t"
+; @output_buffer.concat(( f.password_field :password_confirmation).to_s); @output_buffer.concat "\n\t</div>\n\t<div class=\"actions\">\n\t\t"
+
+
+; @output_buffer.concat(( f.submit "Sign up").to_s); @output_buffer.concat "\n\t</div>\n"
+
+;  end ; @output_buffer.force_encoding(__ENCODING__)
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:77:in `module_eval'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:77:in `compile!'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `block in render_with_benchmark'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+/Users/chandy/training/rails_projects/sample_app/app/controllers/users_controller.rb:18:in `create'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_with_filters'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `block in perform_action_with_benchmark'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_with_rescue'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action_with_flash'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process_with_filters'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `block in build_middleware_stack'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `block in call'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:8:in `synchronize'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+ActionView::TemplateError (/Users/chandy/training/rails_projects/sample_app/app/views/users/new.html.erb:5: syntax error, unexpected tLABEL
+...; @output_buffer.concat(( user: @user.errors.full_messages )...
+...                               ^) on line #5 of app/views/users/new.html.erb:
+2: 
+3: <% form_for(@user) do |f| %>
+4: 	<%= f.error_messages %>
+5: 	<%= user: @user.errors.full_messages %>
+6: 	<div class="field">
+7: 		<%= f.label :name%><br />
+8: 		<%- f.text_field :name%>
+
+    app/controllers/users_controller.rb:18:in `create'
+    <internal:prelude>:8:in `synchronize'
+    /Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    /Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    /Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (151.2ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-03-30 15:59:58) [POST]
+  Parameters: {"authenticity_token"=>"OFfprYYl3rJgIiMaB+w5QovvX/v02IoWMB496TBByds=", "user"=>{"email"=>"1", "password"=>"abc", "password_confirmation"=>"abc"}, "commit"=>"Sign up"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 40ms (View: 28, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-03-30 16:00:27) [POST]
+  Parameters: {"authenticity_token"=>"OFfprYYl3rJgIiMaB+w5QovvX/v02IoWMB496TBByds=", "user"=>{"email"=>"1", "password"=>"abc", "password_confirmation"=>"abc"}, "commit"=>"Sign up"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+
+ActionView::TemplateError (can't convert Array into String) on line #5 of app/views/users/new.html.erb:
+2: 
+3: <% form_for(@user) do |f| %>
+4: 	<%= f.error_messages %>
+5: 	<%= "user" + @user.errors.full_messages %>
+6: 	<div class="field">
+7: 		<%= f.label :name%><br />
+8: 		<%- f.text_field :name%>
+
+    app/views/users/new.html.erb:5:in `block in _run_erb_app47views47users47new46html46erb'
+    app/views/users/new.html.erb:3
+    app/controllers/users_controller.rb:18:in `create'
+    <internal:prelude>:8:in `synchronize'
+    /Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    /Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    /Users/chandy/.multiruby/install/1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (114.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-03-30 16:01:03) [POST]
+  Parameters: {"authenticity_token"=>"OFfprYYl3rJgIiMaB+w5QovvX/v02IoWMB496TBByds=", "user"=>{"email"=>"1", "password"=>"abc", "password_confirmation"=>"abc"}, "commit"=>"Sign up"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 42ms (View: 29, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-03-30 16:04:15) [POST]
+  Parameters: {"authenticity_token"=>"OFfprYYl3rJgIiMaB+w5QovvX/v02IoWMB496TBByds=", "user"=>{"email"=>"1", "password"=>"abc", "password_confirmation"=>"abc"}, "commit"=>"Sign up"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 37ms (View: 24, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-03-30 16:05:33) [POST]
+  Parameters: {"authenticity_token"=>"OFfprYYl3rJgIiMaB+w5QovvX/v02IoWMB496TBByds=", "user"=>{"email"=>"1", "password"=>"abc", "password_confirmation"=>"abc"}, "commit"=>"Sign up"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 28ms (View: 16, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-03-30 16:06:28) [POST]
+  Parameters: {"authenticity_token"=>"OFfprYYl3rJgIiMaB+w5QovvX/v02IoWMB496TBByds=", "user"=>{"email"=>"1", "password"=>"abc", "password_confirmation"=>"abc"}, "commit"=>"Sign up"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 28ms (View: 16, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-03-30 16:15:04) [POST]
+  Parameters: {"authenticity_token"=>"OFfprYYl3rJgIiMaB+w5QovvX/v02IoWMB496TBByds=", "user"=>{"email"=>"1", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up", "controller"=>"users", "action"=>"create"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 28ms (View: 16, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-03-30 16:29:03) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 15ms (View: 13, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-03-30 16:29:05) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 16ms (View: 7, DB: 0) | 200 OK [http://localhost/signup]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-03-30 16:30:01) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 16ms (View: 7, DB: 0) | 200 OK [http://localhost/signup]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-03-30 16:30:55) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 65ms (View: 15, DB: 0) | 200 OK [http://localhost/signup]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-03-30 16:31:29) [POST]
+  Parameters: {"authenticity_token"=>"OFfprYYl3rJgIiMaB+w5QovvX/v02IoWMB496TBByds=", "user"=>{"name"=>"New User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up", "controller"=>"users", "action"=>"create"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.5ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('New User', 'user@example.com', '2010-03-30 21:31:29', '2010-03-30 21:31:29', '7dfaadb15477df113599f2039fc2c28ee6a5bb3598090fd233e4e687bc71af04', 'e4b5b0ba21d43b58a73b7623d7b245ab1a7426e2dd977b03fdac73e7be10b719')[0m
+Redirected to http://localhost:3000/users/1
+Completed in 33ms (DB: 1) | 302 Found [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-03-30 16:31:29) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"1"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 23ms (View: 12, DB: 0) | 200 OK [http://localhost/users/1]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-03-30 16:47:17) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 13ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-03-30 16:47:19) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 16ms (View: 7, DB: 0) | 200 OK [http://localhost/signup]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-03-30 16:47:44) [POST]
+  Parameters: {"authenticity_token"=>"OFfprYYl3rJgIiMaB+w5QovvX/v02IoWMB496TBByds=", "user"=>{"name"=>"example user 2", "email"=>"user2@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up", "controller"=>"users", "action"=>"create"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user2@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('example user 2', 'user2@example.com', '2010-03-30 21:47:44', '2010-03-30 21:47:44', 'e267b1244a830a9b834f364cac065c753bbb206b993fe0a621dd3896beb18de6', '0204b44efa88a1af9f9f829e0a4c18cff18b891775d4ad86c28ef0033274a171')[0m
+Redirected to http://localhost:3000/users/2
+Completed in 17ms (DB: 1) | 302 Found [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-03-30 16:47:44) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"2"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 15ms (View: 4, DB: 0) | 200 OK [http://localhost/users/2]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-03-30 16:55:08) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-03-30 16:55:10) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 16ms (View: 7, DB: 0) | 200 OK [http://localhost/signup]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-03-30 16:55:34) [POST]
+  Parameters: {"authenticity_token"=>"OFfprYYl3rJgIiMaB+w5QovvX/v02IoWMB496TBByds=", "user"=>{"name"=>"example user 3", "email"=>"user3@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up", "controller"=>"users", "action"=>"create"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user3@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.7ms)[0m   [0;1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES('example user 3', 'user3@example.com', '2010-03-30 21:55:34', '2010-03-30 21:55:34', '31a4f0a4a8d7cb4a2d6d01239f6edf2b7f2d643f47e7300997dbef102c42327a', '69aa34915cb34698ab95784fbc6e6063f572788e54f8eb19197002640e84da06')[0m
+Redirected to http://localhost:3000/users/3
+Completed in 56ms (DB: 1) | 302 Found [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-03-30 16:55:34) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"3"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 15ms (View: 4, DB: 0) | 200 OK [http://localhost/users/3]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-03-30 16:56:30) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"3"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 15ms (View: 4, DB: 0) | 200 OK [http://localhost/users/3]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-03-30 16:56:33) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"3"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 15ms (View: 4, DB: 0) | 200 OK [http://localhost/users/3]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
